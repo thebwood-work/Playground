@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{DF89E80A-64CD-48FF-A184-8800AE3CFFED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReactApp", "ReactApp", "{341C8515-84B9-4F35-A05F-04DF75E1E599}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8EF906F1-546C-479F-A932-08EA7B99AC26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Person", "Person", "{71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Address", "Address", "{F1B14EE5-186B-4D98-8EED-A2FBD2A6ADB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.API", "Services\Person\Person.API\Person.API.csproj", "{C3BA19DD-5FC8-4010-AF44-168F0A484559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.Core", "Services\Person\Person.Core\Person.Core.csproj", "{CF300CBE-12DA-4BDA-A862-20C392A93158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3BA19DD-5FC8-4010-AF44-168F0A484559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3BA19DD-5FC8-4010-AF44-168F0A484559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3BA19DD-5FC8-4010-AF44-168F0A484559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3BA19DD-5FC8-4010-AF44-168F0A484559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71F5C49F-1002-40CC-8C20-6D8C6ABBF40B} = {8EF906F1-546C-479F-A932-08EA7B99AC26}
+		{F1B14EE5-186B-4D98-8EED-A2FBD2A6ADB1} = {8EF906F1-546C-479F-A932-08EA7B99AC26}
+		{C3BA19DD-5FC8-4010-AF44-168F0A484559} = {71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}
+		{CF300CBE-12DA-4BDA-A862-20C392A93158} = {71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {272F6777-54A7-4E72-80FD-34D0E6231B52}
+	EndGlobalSection
+EndGlobal
