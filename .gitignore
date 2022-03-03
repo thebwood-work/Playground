@@ -5,3 +5,12 @@
 /Common/Playground.Common/obj
 /Common/Playground.Web.Base/obj
 /Services/Person/Person.Infrastructure/obj
+/Common/Playground.Common/bin/Debug/net6.0
+/Common/Playground.Web.Base/bin/Debug/net6.0/ref
+/Common/Playground.Web.Base/bin/Debug/net6.0
+/Services/Person/Person.API/bin/Debug/net6.0
+/Services/Person/Person.API/obj/Debug/net6.0
+/Services/Person/Person.API/obj
+/Services/Person/Person.Core/bin/Debug/net6.0
+/Services/Person/Person.Infrastructure/bin/Debug/net6.0
+/Services/Person/Person.Core/obj/Debug/net6.0/ref
