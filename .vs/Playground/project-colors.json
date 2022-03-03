@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c3ba19dd-5fc8-4010-af44-168f0a484559": {
+      "ProjectGuid": "c3ba19dd-5fc8-4010-af44-168f0a484559",
+      "DisplayName": "Person.API",
+      "ColorIndex": 0
+    },
+    "a0ba7c32-ee86-48a8-9d21-68fcc1372d9f": {
+      "ProjectGuid": "a0ba7c32-ee86-48a8-9d21-68fcc1372d9f",
+      "DisplayName": "Person.Infrastructure",
+      "ColorIndex": 1
+    },
+    "cf300cbe-12da-4bda-a862-20c392a93158": {
+      "ProjectGuid": "cf300cbe-12da-4bda-a862-20c392a93158",
+      "DisplayName": "Person.Core",
+      "ColorIndex": 2
+    },
+    "d5b0531c-99d6-4e7d-8c51-f409551d152a": {
+      "ProjectGuid": "d5b0531c-99d6-4e7d-8c51-f409551d152a",
+      "DisplayName": "Playground.Web.Base",
+      "ColorIndex": 3
+    },
+    "32afce9b-e317-48b0-a260-af8939689cf5": {
+      "ProjectGuid": "32afce9b-e317-48b0-a260-af8939689cf5",
+      "DisplayName": "Playground.Common",
+      "ColorIndex": 4
+    },
+    "a3047ed6-4c74-4141-91a2-8ce12daf1c55": {
+      "ProjectGuid": "a3047ed6-4c74-4141-91a2-8ce12daf1c55",
+      "DisplayName": "ScaffoldCommands",
+      "ColorIndex": 5
+    },
+    "5995989a-492b-41f6-b054-2603e47c2fcb": {
+      "ProjectGuid": "5995989a-492b-41f6-b054-2603e47c2fcb",
+      "DisplayName": "Scripts",
+      "ColorIndex": 6
+    },
+    "b9f5f841-8de0-4b63-b56f-1055b95052e4": {
+      "ProjectGuid": "b9f5f841-8de0-4b63-b56f-1055b95052e4",
+      "DisplayName": "Address",
+      "ColorIndex": 7
+    },
+    "b4322e17-d9d9-4d7d-bcd1-a7663a2fd411": {
+      "ProjectGuid": "b4322e17-d9d9-4d7d-bcd1-a7663a2fd411",
+      "DisplayName": "Person",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

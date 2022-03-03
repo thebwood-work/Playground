@@ -3,3 +3,5 @@
 ################################################################################
 
 /Common/Playground.Common/obj
+/Common/Playground.Web.Base/obj
+/Services/Person/Person.Infrastructure/obj

@@ -1,0 +1,3 @@
+Scaffold-DbContext " Server=localhost;Database=Person;Trusted_Connection=True " Microsoft.EntityFrameworkCore.SqlServer -Force -OutputDir Entities
+
+Scaffold-DbContext " Server=localhost;Database=Address;Trusted_Connection=True " Microsoft.EntityFrameworkCore.SqlServer -Force -OutputDir Entities

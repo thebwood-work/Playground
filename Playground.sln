@@ -13,9 +13,36 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Person", "Person", "{71F5C4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Address", "Address", "{F1B14EE5-186B-4D98-8EED-A2FBD2A6ADB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.API", "Services\Person\Person.API\Person.API.csproj", "{C3BA19DD-5FC8-4010-AF44-168F0A484559}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person.API", "Services\Person\Person.API\Person.API.csproj", "{C3BA19DD-5FC8-4010-AF44-168F0A484559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.Core", "Services\Person\Person.Core\Person.Core.csproj", "{CF300CBE-12DA-4BDA-A862-20C392A93158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person.Core", "Services\Person\Person.Core\Person.Core.csproj", "{CF300CBE-12DA-4BDA-A862-20C392A93158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.Infrastructure", "Services\Person\Person.Infrastructure\Person.Infrastructure.csproj", "{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{27C691C5-C2F3-4777-AA13-A0B036E664DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Web.Base", "Common\Playground.Web.Base\Playground.Web.Base.csproj", "{D5B0531C-99D6-4E7D-8C51-F409551D152A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Common", "Common\Playground.Common\Playground.Common.csproj", "{32AFCE9B-E317-48B0-A260-AF8939689CF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{69CFF7DA-DCFD-4FDD-AA47-65F8A588EE3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScaffoldCommands", "ScaffoldCommands", "{A3047ED6-4C74-4141-91A2-8CE12DAF1C55}"
+	ProjectSection(SolutionItems) = preProject
+		Database\ScafffoldCommands\ScaffoldCommands.txt = Database\ScafffoldCommands\ScaffoldCommands.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{5995989A-492B-41F6-B054-2603E47C2FCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Person", "Person", "{B4322E17-D9D9-4D7D-BCD1-A7663A2FD411}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Scripts\Person\Person.sql = Database\Scripts\Person\Person.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Address", "Address", "{B9F5F841-8DE0-4B63-B56F-1055B95052E4}"
+	ProjectSection(SolutionItems) = preProject
+		Database\Scripts\Address\Address.sql = Database\Scripts\Address\Address.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +58,18 @@ Global
 		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF300CBE-12DA-4BDA-A862-20C392A93158}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B0531C-99D6-4E7D-8C51-F409551D152A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B0531C-99D6-4E7D-8C51-F409551D152A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B0531C-99D6-4E7D-8C51-F409551D152A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B0531C-99D6-4E7D-8C51-F409551D152A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AFCE9B-E317-48B0-A260-AF8939689CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AFCE9B-E317-48B0-A260-AF8939689CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AFCE9B-E317-48B0-A260-AF8939689CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AFCE9B-E317-48B0-A260-AF8939689CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +79,13 @@ Global
 		{F1B14EE5-186B-4D98-8EED-A2FBD2A6ADB1} = {8EF906F1-546C-479F-A932-08EA7B99AC26}
 		{C3BA19DD-5FC8-4010-AF44-168F0A484559} = {71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}
 		{CF300CBE-12DA-4BDA-A862-20C392A93158} = {71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}
+		{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F} = {71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}
+		{D5B0531C-99D6-4E7D-8C51-F409551D152A} = {27C691C5-C2F3-4777-AA13-A0B036E664DC}
+		{32AFCE9B-E317-48B0-A260-AF8939689CF5} = {27C691C5-C2F3-4777-AA13-A0B036E664DC}
+		{A3047ED6-4C74-4141-91A2-8CE12DAF1C55} = {69CFF7DA-DCFD-4FDD-AA47-65F8A588EE3D}
+		{5995989A-492B-41F6-B054-2603E47C2FCB} = {69CFF7DA-DCFD-4FDD-AA47-65F8A588EE3D}
+		{B4322E17-D9D9-4D7D-BCD1-A7663A2FD411} = {5995989A-492B-41F6-B054-2603E47C2FCB}
+		{B9F5F841-8DE0-4B63-B56F-1055B95052E4} = {5995989A-492B-41F6-B054-2603E47C2FCB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {272F6777-54A7-4E72-80FD-34D0E6231B52}
