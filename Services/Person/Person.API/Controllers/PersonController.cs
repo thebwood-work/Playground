@@ -13,8 +13,8 @@ namespace Person.API.Controllers
     [ApiController]
     public class PersonController : PlaygroundController<PersonController>
     {
-        private readonly IPersonService _service;
-        protected PersonController(ILogger<PersonController> logger, IPersonService service) : base(logger)
+        private IPersonService _service;
+        public PersonController(ILogger<PersonController> logger, IPersonService service) : base(logger)
         {
             _service = service ?? throw new ArgumentNullException(nameof(service));
         }

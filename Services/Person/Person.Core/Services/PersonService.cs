@@ -10,10 +10,10 @@ namespace Person.Core.Services
 {
     public class PersonService : PlaygroundService<PersonService>, IPersonService
     {
-        private IPersonRepository _repository;
+        private readonly IPersonRepository _repository;
         private readonly IMapper _mapper;
 
-        protected PersonService(ILogger<PersonService> logger, IPersonRepository respository, IMapper mapper) : base(logger)
+        public PersonService(ILogger<PersonService> logger, IPersonRepository respository, IMapper mapper) : base(logger)
         {
             _repository = respository ?? throw new ArgumentNullException();
             _mapper = mapper ?? throw new ArgumentNullException();

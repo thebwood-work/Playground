@@ -1,9 +1,9 @@
-using Microsoft.EntityFrameworkCore;
 using Person.Core.Services;
 using Person.Core.Services.Interfaces;
 using Person.Infrastructure.Entities;
 using Person.Infrastructure.Repositories;
 using Person.Infrastructure.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 var siteCorsPolicy = "SiteCorsPolicy";
 
@@ -23,8 +23,8 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddControllers();
-builder.Services.AddScoped<IPersonRepository, PersonRepository>();
-builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddTransient<IPersonRepository, PersonRepository>();
+builder.Services.AddTransient<IPersonService, PersonService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var connectionString = builder.Configuration["Person"];
 builder.Services.AddDbContext<PersonContext>(options => options.UseSqlServer(connectionString));

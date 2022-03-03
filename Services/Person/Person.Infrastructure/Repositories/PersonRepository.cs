@@ -9,7 +9,7 @@ namespace Person.Infrastructure.Repositories
     {
         private PersonContext _context;
 
-        protected PersonRepository(ILogger<PersonRepository> logger, PersonContext context) : base(logger)
+        public PersonRepository(ILogger<PersonRepository> logger, PersonContext context) : base(logger)
         {
             _context = context ?? throw new ArgumentNullException();
         }
