@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{DF89E80A-64CD-48FF-A184-8800AE3CFFED}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReactApp", "ReactApp", "{341C8515-84B9-4F35-A05F-04DF75E1E599}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{8EF906F1-546C-479F-A932-08EA7B99AC26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Person", "Person", "{71F5C49F-1002-40CC-8C20-6D8C6ABBF40B}"
@@ -17,13 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person.API", "Services\Pers
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person.Core", "Services\Person\Person.Core\Person.Core.csproj", "{CF300CBE-12DA-4BDA-A862-20C392A93158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Person.Infrastructure", "Services\Person\Person.Infrastructure\Person.Infrastructure.csproj", "{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Person.Infrastructure", "Services\Person\Person.Infrastructure\Person.Infrastructure.csproj", "{A0BA7C32-EE86-48A8-9D21-68FCC1372D9F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{27C691C5-C2F3-4777-AA13-A0B036E664DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Web.Base", "Common\Playground.Web.Base\Playground.Web.Base.csproj", "{D5B0531C-99D6-4E7D-8C51-F409551D152A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Web.Base", "Common\Playground.Web.Base\Playground.Web.Base.csproj", "{D5B0531C-99D6-4E7D-8C51-F409551D152A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Common", "Common\Playground.Common\Playground.Common.csproj", "{32AFCE9B-E317-48B0-A260-AF8939689CF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Common", "Common\Playground.Common\Playground.Common.csproj", "{32AFCE9B-E317-48B0-A260-AF8939689CF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{69CFF7DA-DCFD-4FDD-AA47-65F8A588EE3D}"
 EndProject
