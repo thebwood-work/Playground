@@ -1,9 +1,9 @@
+using Locations.Core.Services;
+using Locations.Core.Services.Interfaces;
+using Locations.Infrastructure.Entities;
+using Locations.Infrastructure.Repositories;
+using Locations.Infrastructure.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using People.Core.Services;
-using People.Core.Services.Interfaces;
-using People.Infrastructure.Entities;
-using People.Infrastructure.Repositories;
-using People.Infrastructure.Repositories.Interfaces;
 
 var siteCorsPolicy = "SiteCorsPolicy";
 
@@ -25,11 +25,11 @@ builder.Services.AddCors(options =>
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddTransient<IPeopleRepository, PeopleRepository>();
-builder.Services.AddTransient<IPeopleService, PeopleService>();
+builder.Services.AddTransient<IAddressRepository, AddressRepository>();
+builder.Services.AddTransient<IAddressService, AddressService>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-var connectionString = builder.Configuration["People"];
-builder.Services.AddDbContext<PeopleContext>(options => options.UseSqlServer(connectionString));
+var connectionString = builder.Configuration["Locations"];
+builder.Services.AddDbContext<LocationsContext>(options => options.UseSqlServer(connectionString));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

@@ -1,20 +1,19 @@
-﻿using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
+﻿using Locations.Core.Models;
+using Locations.Core.Services.Interfaces;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using People.Core.Models;
-using People.Core.Services.Interfaces;
 using Playground.Web.Base.Controllers;
 using System.Net;
 
-namespace People.API.Controllers
+namespace Locations.API.Controllers
 {
     [EnableCors("SiteCorsPolicy")]
     [Route("api/[controller]")]
     [ApiController]
-    public class PeopleController : PlaygroundController<PeopleController>
+    public class AddressesController : PlaygroundController<AddressesController>
     {
-        private readonly IPeopleService _service;
-        public PeopleController(ILogger<PeopleController> logger, IPeopleService service) : base(logger)
+        private readonly IAddressService _service;
+        public AddressesController(ILogger<AddressesController> logger, IAddressService service) : base(logger)
         {
             _service = service ?? throw new ArgumentNullException(nameof(service));
         }
@@ -38,20 +37,20 @@ namespace People.API.Controllers
             }
             catch (Exception ex)
             {
-                this.Logger.LogError("Error happened on GetPeople", ex);
+                this.Logger.LogError("Error happened on Get Addresses", ex);
                 return StatusCode((int)HttpStatusCode.InternalServerError, "A problem happened while handling your request.");
             }
         }
 
-        [HttpGet("{personId}")]
+        [HttpGet("{addressId}")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NoContent)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public IActionResult Get(Guid? personId)
+        public IActionResult Get(Guid? addressId)
         {
             try
             {
-                var retVal = _service.Get(personId);
+                var retVal = _service.Get(addressId);
 
                 if (retVal != null)
                 {
@@ -62,7 +61,7 @@ namespace People.API.Controllers
             }
             catch (Exception ex)
             {
-                this.Logger.LogError("Error happened on GetPerson by ID", ex);
+                this.Logger.LogError("Error happened on Get Address by ID", ex);
                 return StatusCode((int)HttpStatusCode.InternalServerError, "A problem happened while handling your request.");
             }
         }
@@ -70,13 +69,13 @@ namespace People.API.Controllers
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public IActionResult Save([FromBody] PersonModel person)
+        public IActionResult Save([FromBody] AddressModel address)
         {
             var errorList = new List<string>();
 
             try
             {
-                errorList = _service.Save(person);
+                errorList = _service.Save(address);
                 if (errorList.Count > 0)
                 {
                     return BadRequest(errorList);

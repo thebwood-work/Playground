@@ -15,3 +15,5 @@
 /Services/Person/Person.Infrastructure/bin/Debug/net6.0
 /Services/Person/Person.Core/obj/Debug/net6.0/ref
 /Playground.Infrastructure.Base/obj
+/Services/Locations/Locations.API/obj
+/Services/Locations/Locations.Infrastructure/obj

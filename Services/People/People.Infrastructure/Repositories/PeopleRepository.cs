@@ -7,9 +7,9 @@ namespace People.Infrastructure.Repositories
 {
     public class PeopleRepository : PlaygroundRepository<PeopleRepository>, IPeopleRepository
     {
-        private PersonContext _context;
+        private PeopleContext _context;
 
-        public PeopleRepository(ILogger<PeopleRepository> logger, PersonContext context) : base(logger)
+        public PeopleRepository(ILogger<PeopleRepository> logger, PeopleContext context) : base(logger)
         {
             _context = context ?? throw new ArgumentNullException();
         }
