@@ -50,7 +50,32 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "ae999648-4ff7-4fb8-a1e7-b201779c92a7": {
+      "ProjectGuid": "ae999648-4ff7-4fb8-a1e7-b201779c92a7",
+      "DisplayName": "People.Core",
+      "ColorIndex": 9
+    },
+    "479a3f1c-2906-4b88-ae9f-60a120e8f940": {
+      "ProjectGuid": "479a3f1c-2906-4b88-ae9f-60a120e8f940",
+      "DisplayName": "People.Infrastructure",
+      "ColorIndex": 10
+    },
+    "ccca8acf-3e81-4058-8d0f-f318d3022864": {
+      "ProjectGuid": "ccca8acf-3e81-4058-8d0f-f318d3022864",
+      "DisplayName": "Playground.Core.Base",
+      "ColorIndex": 11
+    },
+    "d2ea6593-1fb6-4d98-bbc0-7757156bc5ad": {
+      "ProjectGuid": "d2ea6593-1fb6-4d98-bbc0-7757156bc5ad",
+      "DisplayName": "People.API",
+      "ColorIndex": 12
+    },
+    "379be358-f919-4dd8-b77d-9fcbb7ba00ee": {
+      "ProjectGuid": "379be358-f919-4dd8-b77d-9fcbb7ba00ee",
+      "DisplayName": "Person.API",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 14
 }

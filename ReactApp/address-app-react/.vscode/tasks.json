@@ -1,0 +1,94 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Game API",
+			"command": "dotnet",
+			"type": "process",
+			"isBackground": true,
+			"group": "build",
+			"args": [
+				"run",
+				"--project",
+				"D:\\Development\\GitHub\\Microservices\\InventoryManagementServices\\InventoryManagementServices\\Services\\Game\\Game.API\\Game.API.csproj",
+				"--urls=http://localhost:5109"
+			],
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": "$msCompile",
+			"runOptions": {
+				"instanceLimit": 1
+			}
+		},
+		{
+			"label": "Movie API",
+			"command": "dotnet",
+			"type": "process",
+			"isBackground": true,
+			"group": "build",
+			"args": [
+				"run",
+				"--project",
+				"D:\\Development\\GitHub\\Microservices\\InventoryManagementServices\\InventoryManagementServices\\Services\\Movie\\Movie.API\\Movie.API.csproj",
+				"--urls=http://localhost:5091"
+			],
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": "$msCompile",
+			"runOptions": {
+				"instanceLimit": 1
+			}
+		},
+
+		{
+			"label": "RefData API",
+			"command": "dotnet",
+			"type": "process",
+			"isBackground": true,
+			"group": "build",
+			"args": [
+				"run",
+				"--project",
+				"D:\\Development\\GitHub\\Microservices\\InventoryManagementServices\\InventoryManagementServices\\Services\\RefData\\RefData.API\\RefData.API.csproj",
+				"--urls=http://localhost:5135"
+			],
+			"presentation": {
+				"reveal": "always"
+			},
+			"problemMatcher": "$msCompile",
+			"runOptions": {
+				"instanceLimit": 1
+			}
+		},
+		
+		{
+			"label": "Run all APIs",
+			"dependsOn": [
+				"Movie API",
+				"Game API",
+				"RefData API"
+			],
+			"detail": "Runs all APIs",
+			"problemMatcher": []
+		},
+		{
+			"label": "Terminate All Tasks",
+			"detail": "Kill all running tasks",
+			"command": "echo ${input: terminate}",
+			"type": "shell",
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{
+			"id": "terminate",
+			"type": "command",
+			"command": "workbench.action.tasks.terminate",
+			"args": "terminateAll"
+		}
+	]
+
+
+}
