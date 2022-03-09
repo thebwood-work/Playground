@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3MsLR0Pfp78GkO15pmD6C7o9QdrxuDTlSLbACmERmvZh55gGclRjiN7AcyYigHHFhybFreS727iouc1z25FTaQ==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Core.Base\\Playground.Core.Base.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\brian\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

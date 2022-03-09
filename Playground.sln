@@ -34,13 +34,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "People.Infrastructure", "Se
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Core.Base", "Common\Playground.Core.Base\Playground.Core.Base.csproj", "{CCCA8ACF-3E81-4058-8D0F-F318D3022864}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Infrastructure.Base", "Playground.Infrastructure.Base\Playground.Infrastructure.Base.csproj", "{18187126-9937-4744-B97C-C3604F935812}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Infrastructure.Base", "Playground.Infrastructure.Base\Playground.Infrastructure.Base.csproj", "{18187126-9937-4744-B97C-C3604F935812}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.API", "Services\Locations\Locations.API\Locations.API.csproj", "{A97E28F7-39DA-4A62-B769-F0360B692063}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locations.API", "Services\Locations\Locations.API\Locations.API.csproj", "{A97E28F7-39DA-4A62-B769-F0360B692063}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.Core", "Services\Locations\Locations.Core\Locations.Core.csproj", "{3A6F48BF-1E34-42D1-9CF5-725B4A49EBAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locations.Core", "Services\Locations\Locations.Core\Locations.Core.csproj", "{3A6F48BF-1E34-42D1-9CF5-725B4A49EBAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Locations.Infrastructure", "Services\Locations\Locations.Infrastructure\Locations.Infrastructure.csproj", "{AB0450BC-E264-44CB-AD6F-96DE98780867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Locations.Infrastructure", "Services\Locations\Locations.Infrastructure\Locations.Infrastructure.csproj", "{AB0450BC-E264-44CB-AD6F-96DE98780867}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55}"
 	ProjectSection(SolutionItems) = preProject
@@ -51,6 +51,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{F1ABFD
 	ProjectSection(SolutionItems) = preProject
 		People.sql = People.sql
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorApp", "BlazorApp", "{E42B5E25-40BA-45A9-BC0E-64E152576B65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressApp", "BlazorApp\AddressApp\AddressApp.csproj", "{04064E19-E0A8-4790-98EB-8171333B46CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -98,6 +102,10 @@ Global
 		{AB0450BC-E264-44CB-AD6F-96DE98780867}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0450BC-E264-44CB-AD6F-96DE98780867}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0450BC-E264-44CB-AD6F-96DE98780867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04064E19-E0A8-4790-98EB-8171333B46CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04064E19-E0A8-4790-98EB-8171333B46CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04064E19-E0A8-4790-98EB-8171333B46CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04064E19-E0A8-4790-98EB-8171333B46CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +127,7 @@ Global
 		{AB0450BC-E264-44CB-AD6F-96DE98780867} = {139C0783-3BD8-44EE-BB06-C84E4EF196CE}
 		{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55} = {5995989A-492B-41F6-B054-2603E47C2FCB}
 		{F1ABFD77-5544-4280-B7F0-E97AAF8C59B5} = {5995989A-492B-41F6-B054-2603E47C2FCB}
+		{04064E19-E0A8-4790-98EB-8171333B46CB} = {E42B5E25-40BA-45A9-BC0E-64E152576B65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {272F6777-54A7-4E72-80FD-34D0E6231B52}
