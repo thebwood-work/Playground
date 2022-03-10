@@ -1,0 +1,5 @@
+People
+Server=localhost;Database=People;Trusted_Connection=True;
+
+Locations
+Server=localhost;Database=Locations;Trusted_Connection=True
