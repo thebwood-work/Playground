@@ -11,7 +11,7 @@
 				"run",
 				"--project",
 				"D:\\Development\\GitHub\\Microservices\\InventoryManagementServices\\InventoryManagementServices\\Services\\Game\\Game.API\\Game.API.csproj",
-				"--urls=http://localhost:5109"
+				"--urls=http://localhost:7243"
 			],
 			"presentation": {
 				"reveal": "always"
@@ -31,7 +31,7 @@
 				"run",
 				"--project",
 				"D:\\Development\\GitHub\\Microservices\\InventoryManagementServices\\InventoryManagementServices\\Services\\Movie\\Movie.API\\Movie.API.csproj",
-				"--urls=http://localhost:5091"
+				"--urls=http://localhost:7231"
 			],
 			"presentation": {
 				"reveal": "always"

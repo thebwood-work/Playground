@@ -50,67 +50,7 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
-    },
-    "ae999648-4ff7-4fb8-a1e7-b201779c92a7": {
-      "ProjectGuid": "ae999648-4ff7-4fb8-a1e7-b201779c92a7",
-      "DisplayName": "People.Core",
-      "ColorIndex": 9
-    },
-    "479a3f1c-2906-4b88-ae9f-60a120e8f940": {
-      "ProjectGuid": "479a3f1c-2906-4b88-ae9f-60a120e8f940",
-      "DisplayName": "People.Infrastructure",
-      "ColorIndex": 10
-    },
-    "ccca8acf-3e81-4058-8d0f-f318d3022864": {
-      "ProjectGuid": "ccca8acf-3e81-4058-8d0f-f318d3022864",
-      "DisplayName": "Playground.Core.Base",
-      "ColorIndex": 11
-    },
-    "d2ea6593-1fb6-4d98-bbc0-7757156bc5ad": {
-      "ProjectGuid": "d2ea6593-1fb6-4d98-bbc0-7757156bc5ad",
-      "DisplayName": "People.API",
-      "ColorIndex": 12
-    },
-    "379be358-f919-4dd8-b77d-9fcbb7ba00ee": {
-      "ProjectGuid": "379be358-f919-4dd8-b77d-9fcbb7ba00ee",
-      "DisplayName": "Person.API",
-      "ColorIndex": 13
-    },
-    "18187126-9937-4744-b97c-c3604f935812": {
-      "ProjectGuid": "18187126-9937-4744-b97c-c3604f935812",
-      "DisplayName": "Playground.Infrastructure.Base",
-      "ColorIndex": 14
-    },
-    "a97e28f7-39da-4a62-b769-f0360b692063": {
-      "ProjectGuid": "a97e28f7-39da-4a62-b769-f0360b692063",
-      "DisplayName": "Locations.API",
-      "ColorIndex": 15
-    },
-    "3a6f48bf-1e34-42d1-9cf5-725b4a49ebaf": {
-      "ProjectGuid": "3a6f48bf-1e34-42d1-9cf5-725b4a49ebaf",
-      "DisplayName": "Locations.Core",
-      "ColorIndex": 0
-    },
-    "ab0450bc-e264-44cb-ad6f-96de98780867": {
-      "ProjectGuid": "ab0450bc-e264-44cb-ad6f-96de98780867",
-      "DisplayName": "Locations.Infrastructure",
-      "ColorIndex": 1
-    },
-    "f1abfd77-5544-4280-b7f0-e97aaf8c59b5": {
-      "ProjectGuid": "f1abfd77-5544-4280-b7f0-e97aaf8c59b5",
-      "DisplayName": "People",
-      "ColorIndex": 2
-    },
-    "fa90e80e-8b18-4d7b-9cb3-8097a26afc55": {
-      "ProjectGuid": "fa90e80e-8b18-4d7b-9cb3-8097a26afc55",
-      "DisplayName": "Locations",
-      "ColorIndex": 3
-    },
-    "04064e19-e0a8-4790-98eb-8171333b46cb": {
-      "ProjectGuid": "04064e19-e0a8-4790-98eb-8171333b46cb",
-      "DisplayName": "AddressApp",
-      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 9
 }
