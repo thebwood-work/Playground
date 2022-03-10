@@ -105,7 +105,12 @@
       "ProjectGuid": "fa90e80e-8b18-4d7b-9cb3-8097a26afc55",
       "DisplayName": "Locations",
       "ColorIndex": 3
+    },
+    "04064e19-e0a8-4790-98eb-8171333b46cb": {
+      "ProjectGuid": "04064e19-e0a8-4790-98eb-8171333b46cb",
+      "DisplayName": "AddressApp",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
