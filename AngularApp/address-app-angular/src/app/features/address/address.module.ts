@@ -15,8 +15,6 @@ import { AddressDetailComponent } from './address-detail/address-detail.componen
     CommonModule,
     AddressRoutingModule
   ],
-  exports: [
-    AddressComponent, AddressDetailComponent
-  ]
+  exports: []
 })
 export class AddressModule { }

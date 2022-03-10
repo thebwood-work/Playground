@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{69
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScaffoldCommands", "ScaffoldCommands", "{A3047ED6-4C74-4141-91A2-8CE12DAF1C55}"
 	ProjectSection(SolutionItems) = preProject
+		EnvironmentVariables.txt = EnvironmentVariables.txt
 		Database\ScafffoldCommands\ScaffoldCommands.txt = Database\ScafffoldCommands\ScaffoldCommands.txt
 	EndProjectSection
 EndProject
@@ -45,6 +46,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55}"
 	ProjectSection(SolutionItems) = preProject
 		Address.sql = Address.sql
+		Countries.sql = Countries.sql
+		States.sql = States.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{F1ABFD77-5544-4280-B7F0-E97AAF8C59B5}"
@@ -54,7 +57,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{F1ABFD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorApp", "BlazorApp", "{E42B5E25-40BA-45A9-BC0E-64E152576B65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddressApp", "BlazorApp\AddressApp\AddressApp.csproj", "{04064E19-E0A8-4790-98EB-8171333B46CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressApp", "BlazorApp\AddressApp\AddressApp.csproj", "{04064E19-E0A8-4790-98EB-8171333B46CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

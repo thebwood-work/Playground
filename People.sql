@@ -1,7 +1,7 @@
 ﻿USE [People]
 GO
 
-/****** Object:  Table [dbo].[People]    Script Date: 3/2/2022 10:57:38 PM ******/
+/****** Object:  Table [dbo].[People]    Script Date: 3/10/2022 11:03:04 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -13,6 +13,15 @@ CREATE TABLE [dbo].[People](
 	[FirstName] [varchar](100) NOT NULL,
 	[LastName] [varchar](100) NOT NULL,
 	[DateOfBirth] [datetime] NULL,
+	[BirthCity] [varchar](100) NULL,
+	[BirthStateID] [uniqueidentifier] NULL,
+	[City] [varchar](100) NULL,
+	[StateID] [uniqueidentifier] NULL,
+	[StateAbbreviation] [varchar](5) NULL,
+	[StateName] [varchar](50) NULL,
+	[CountryId] [uniqueidentifier] NULL,
+	[CountryAbbreviation] [varchar](10) NULL,
+	[CountryName] [varchar](50) NULL,
  CONSTRAINT [PK_People] PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC
@@ -22,3 +31,5 @@ GO
 
 ALTER TABLE [dbo].[People] ADD  DEFAULT (newid()) FOR [ID]
 GO
+
+
