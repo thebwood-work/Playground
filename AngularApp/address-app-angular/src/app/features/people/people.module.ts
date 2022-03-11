@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { PeopleRoutingModule } from './people-routing.module';
 import { PeopleComponent } from './people.component';
 import { PeopleDetailComponent } from './people-detail/people-detail.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PeopleDetailComponent } from './people-detail/people-detail.component';
   ],
   imports: [
     CommonModule,
-    PeopleRoutingModule
+    PeopleRoutingModule,
+    SharedModule
   ],
   exports: []
 })
