@@ -92,5 +92,26 @@ namespace People.API.Controllers
             return Ok(errorList);
         }
 
+        [HttpPost("search")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.NoContent)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        public IActionResult Search([FromBody] PersonSearchModel searchRequest)
+        {
+            try
+            {
+                var searchResults = _service.Search(searchRequest);
+
+                return Ok(searchResults);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, "A problem happened while handling your request.");
+            }
+
+        }
+
+
     }
 }

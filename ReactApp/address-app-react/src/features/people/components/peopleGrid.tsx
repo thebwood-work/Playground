@@ -7,7 +7,7 @@ import TableFooter from '@mui/material/TableFooter';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import { IPersonModel } from '../../../app/models/interfaces/IPersonModel';
+import { IPersonModel } from '../../../app/models/people/interfaces/IPersonModel';
 import TablePaging from '../../../app/components/tablePaging/tablePaging';
 
 

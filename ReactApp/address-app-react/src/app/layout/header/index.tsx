@@ -9,7 +9,6 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { Dashboard, Home, Link, People } from '@mui/icons-material';
 import AppBar from '@mui/material/AppBar';
 import { REACT_ROUTES } from '../../constants/constant';
 import { ListItemButton, ListItemText } from '@mui/material';

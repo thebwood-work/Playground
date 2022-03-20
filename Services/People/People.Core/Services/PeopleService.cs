@@ -89,5 +89,19 @@ namespace People.Core.Services
             }
             return errors;
         }
+
+
+        public List<PersonSearchResultsModel> Search(PersonSearchModel model)
+        {
+            var personSearch = new PersonSearch();
+            _mapper.Map(model, personSearch);
+
+            var personSearchResults = _repository.Search(personSearch);
+            var personSearchResultsModel = new List<PersonSearchResultsModel>();
+
+            _mapper.Map(personSearchResults, personSearchResultsModel);
+
+            return personSearchResultsModel;
+        }
     }
 }

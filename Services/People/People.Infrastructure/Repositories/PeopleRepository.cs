@@ -42,5 +42,25 @@ namespace People.Infrastructure.Repositories
                 _context.People.Add(person);
             _context.SaveChanges();
         }
+
+        public List<PersonSearchResults> Search(PersonSearch personSearch)
+        {
+            var results = (from p in _context.People
+                           where (string.IsNullOrEmpty(personSearch.FirstName) || p.FirstName.Contains(personSearch.FirstName)) &&
+                           (string.IsNullOrEmpty(personSearch.LastName) || p.LastName.Contains(personSearch.LastName))
+                           select new PersonSearchResults
+                           {
+                               FirstName = p.FirstName,
+                               LastName = p.LastName,
+                               Id = p.Id.Value,
+                               DateOfBirth = p.DateOfBirth
+                           })
+                    .OrderBy(a => a.LastName)
+                    .OrderBy(a => a.FirstName)
+                    .Take(1000)
+                    .ToList();
+
+            return results;
+        }
     }
 }

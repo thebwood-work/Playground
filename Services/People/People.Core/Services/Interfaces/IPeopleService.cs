@@ -8,6 +8,6 @@ namespace People.Core.Services.Interfaces
         IEnumerable<PersonModel> Get();
         PersonModel Get(Guid? personId);
         bool Delete(Guid? personId);
-
+        List<PersonSearchResultsModel> Search(PersonSearchModel searchRequest);
     }
 }

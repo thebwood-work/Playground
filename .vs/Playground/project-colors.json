@@ -50,7 +50,32 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "04064e19-e0a8-4790-98eb-8171333b46cb": {
+      "ProjectGuid": "04064e19-e0a8-4790-98eb-8171333b46cb",
+      "DisplayName": "AddressApp",
+      "ColorIndex": 9
+    },
+    "f1abfd77-5544-4280-b7f0-e97aaf8c59b5": {
+      "ProjectGuid": "f1abfd77-5544-4280-b7f0-e97aaf8c59b5",
+      "DisplayName": "People",
+      "ColorIndex": 10
+    },
+    "d2ea6593-1fb6-4d98-bbc0-7757156bc5ad": {
+      "ProjectGuid": "d2ea6593-1fb6-4d98-bbc0-7757156bc5ad",
+      "DisplayName": "People.API",
+      "ColorIndex": 11
+    },
+    "ae999648-4ff7-4fb8-a1e7-b201779c92a7": {
+      "ProjectGuid": "ae999648-4ff7-4fb8-a1e7-b201779c92a7",
+      "DisplayName": "People.Core",
+      "ColorIndex": 12
+    },
+    "479a3f1c-2906-4b88-ae9f-60a120e8f940": {
+      "ProjectGuid": "479a3f1c-2906-4b88-ae9f-60a120e8f940",
+      "DisplayName": "People.Infrastructure",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 14
 }

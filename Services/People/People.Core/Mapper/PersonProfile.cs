@@ -10,6 +10,8 @@ namespace People.Core.Mapper
         {
             CreateMap<Person, PersonModel>();
             CreateMap<PersonModel, Person>();
+            CreateMap<PersonSearchModel, PersonSearch>();
+            CreateMap<PersonSearchResults, PersonSearchResultsModel>();
         }
     }
 }

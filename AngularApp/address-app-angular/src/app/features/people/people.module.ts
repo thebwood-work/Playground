@@ -6,7 +6,7 @@ import { PeopleComponent } from './people.component';
 import { PeopleDetailComponent } from './people-detail/people-detail.component';
 import { SharedModule } from '../shared/shared.module';
 import { PeopleSearchComponent } from './people-search/people-search.component';
-import { PeopleGridComponent } from './people-grid/people-grid.component';
+import { PeopleGridComponent } from './components/people-grid/people-grid.component';
 
 
 @NgModule({

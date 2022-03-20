@@ -8,6 +8,6 @@ namespace People.Infrastructure.Repositories.Interfaces
         Person Get(Guid? personId);
         void Save(Person person);
         bool Delete(Guid? personId);
-
+        List<PersonSearchResults> Search(PersonSearch personSearch);
     }
 }
