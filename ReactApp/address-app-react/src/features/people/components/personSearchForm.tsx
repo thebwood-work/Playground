@@ -43,9 +43,9 @@ const PersonSearchForm: React.FC<ChildProps> = (props) => {
                 </div>
 
             </div>
-            <div className="row mb-2 text-right">
-                <div className="col-12 text-right">
-                    <Button variant="contained" onClick={() => HandleSearch(personSearch)}>Search</Button>
+            <div className="row mb-2">
+                <div className="col-12">
+                    <Button className="float-right" variant="contained" onClick={() => HandleSearch(personSearch)}>Search</Button>
                 </div>
             </div>
         </Container>

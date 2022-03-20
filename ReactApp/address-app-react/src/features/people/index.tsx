@@ -22,7 +22,7 @@ const People: FC = () => {
 
     useEffect(() => {
         searchPeople(new PersonSearch());
-    }, [searchPeople]);
+    }, []);
 
     return(
         <Fragment>
@@ -31,7 +31,6 @@ const People: FC = () => {
             </div>
             <div>
                 <PersonSearchForm HandleSearch={searchPeople} />
-
             </div>
             <div>
                 <PeopleGrid rows={people}  />

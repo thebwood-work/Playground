@@ -46,8 +46,8 @@ namespace People.Infrastructure.Repositories
         public List<PersonSearchResults> Search(PersonSearch personSearch)
         {
             var results = (from p in _context.People
-                           where (string.IsNullOrEmpty(personSearch.FirstName) || p.FirstName.Contains(personSearch.FirstName)) &&
-                           (string.IsNullOrEmpty(personSearch.LastName) || p.LastName.Contains(personSearch.LastName))
+                           where (string.IsNullOrWhiteSpace(personSearch.FirstName) || p.FirstName.Contains(personSearch.FirstName)) &&
+                           (string.IsNullOrWhiteSpace(personSearch.LastName) || p.LastName.Contains(personSearch.LastName))
                            select new PersonSearchResults
                            {
                                FirstName = p.FirstName,
