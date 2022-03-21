@@ -8,6 +8,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,9 +16,4 @@
     <Folder Include="Models\Locations\" />
     <Folder Include="State\" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Common\Playground.Web.Base\Playground.Web.Base.csproj" />
-  </ItemGroup>
-
 </Project>

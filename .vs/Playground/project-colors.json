@@ -75,7 +75,12 @@
       "ProjectGuid": "479a3f1c-2906-4b88-ae9f-60a120e8f940",
       "DisplayName": "People.Infrastructure",
       "ColorIndex": 13
+    },
+    "a97e28f7-39da-4a62-b769-f0360b692063": {
+      "ProjectGuid": "a97e28f7-39da-4a62-b769-f0360b692063",
+      "DisplayName": "Locations.API",
+      "ColorIndex": 14
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 15
 }
