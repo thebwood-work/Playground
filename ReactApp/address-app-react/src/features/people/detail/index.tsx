@@ -1,5 +1,6 @@
 import { Alert, Button, Container, TextField } from "@mui/material";
 import axios from "axios";
+import moment from "moment";
 import React, { FC, Fragment, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { IPersonDetailModel } from "../../../app/models/people/interfaces/IPersonDetailModel";
@@ -10,19 +11,19 @@ const PersonDetail: FC = () => {
     const navigate = useNavigate();
     const { id } = useParams();
     const [person, setPerson] = useState<IPersonDetailModel>(new PersonDetailModel());
-    const { firstName, lastName } = person;
+    const { firstName, lastName, dateOfBirth } = person;
     const [errorMessages, setErrorMessages] = useState<string[]>([]);
 
-    useEffect(() =>{
-        if(id){
-            axios.get<PersonDetailModel>('https://localhost:7243/api/people/' + id).then(response =>{
-                    if(response)
-                        setPerson(response.data);
-                    else{
-                        let errors = [];
-                        errors.push('Something went wrong');
-                        setErrorMessages(errors);
-                    }
+    useEffect(() => {
+        if (id) {
+            axios.get<PersonDetailModel>('https://localhost:7243/api/people/' + id).then(response => {
+                if (response)
+                    setPerson(response.data);
+                else {
+                    let errors = [];
+                    errors.push('Something went wrong');
+                    setErrorMessages(errors);
+                }
             });
         }
 
@@ -44,7 +45,7 @@ const PersonDetail: FC = () => {
         navigate("/people");
     }
 
-    return(
+    return (
         <Container maxWidth="md">
 
             {(errorMessages && errorMessages.length > 0) && errorMessages.map(error => (
@@ -81,6 +82,22 @@ const PersonDetail: FC = () => {
                             ></TextField>
 
                         </div>
+                    </div>
+                    <div className="row mb-2">
+                        <div className="col-6">
+                            <TextField
+                                id="BirthDate"
+                                label="Date of Birth"
+                                type="date"
+                                value={dateOfBirth ? moment(dateOfBirth).format("YYYY-MM-DD") : ""}
+                                fullWidth
+                                onChange={(e) => setPerson({ ...person, dateOfBirth: e.target.value })}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                            />
+                        </div>
+
                     </div>
                     <div className="row mb-2">
                         <div className="col-12 text-right">
