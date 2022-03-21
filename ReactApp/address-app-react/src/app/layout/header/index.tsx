@@ -61,18 +61,29 @@ export default function Header() {
           },
         }}
       >
-        <IconButton onClick={handleDrawerClose}>
-          {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-        </IconButton>
+        <div className="row bg-primary">
+          <div className="col-12">
+            <IconButton className="text-white" onClick={handleDrawerClose}>
+              {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            </IconButton>
+
+          </div>
+
+        </div>
         <Divider />
-        <List>
-          <ListItemButton component="a" href={REACT_ROUTES.HOME}>
-            <ListItemText primary="Home" />
-          </ListItemButton>
-          <ListItemButton component="a" href={REACT_ROUTES.PEOPLE}>
-            <ListItemText primary="People" />
-          </ListItemButton>
-        </List>
+        <div className="row">
+          <div className="col-12">
+            <List>
+              <ListItemButton component="a" href={REACT_ROUTES.HOME}>
+                <ListItemText primary="Home" />
+              </ListItemButton>
+              <ListItemButton component="a" href={REACT_ROUTES.PEOPLE}>
+                <ListItemText primary="People" />
+              </ListItemButton>
+            </List>
+
+          </div>
+        </div>
       </Drawer>
     </Fragment>
   );
