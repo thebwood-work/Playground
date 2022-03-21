@@ -1,14 +1,14 @@
 import { Button, Container, TextField } from "@mui/material";
 import React from "react";
-import { IPersonSearch } from "../../../app/models/people/interfaces/IPersonSearch";
-import { PersonSearch } from "../../../app/models/people/PersonSearch";
+import { IPersonSearchModel } from "../../../app/models/people/interfaces/IPersonSearchModel";
+import { PersonSearchModel } from "../../../app/models/people/PersonSearchModel";
 
 interface ChildProps {
-    HandleSearch: (personSearch: IPersonSearch) => void;
+    HandleSearch: (personSearch: IPersonSearchModel) => void;
 }
 
 const PersonSearchForm: React.FC<ChildProps> = (props) => {
-    const [personSearch, setPersonSearch] = React.useState<IPersonSearch>(new PersonSearch());
+    const [personSearch, setPersonSearch] = React.useState<IPersonSearchModel>(new PersonSearchModel());
     const { HandleSearch } = props;
     const { firstName, lastName } = personSearch;
 

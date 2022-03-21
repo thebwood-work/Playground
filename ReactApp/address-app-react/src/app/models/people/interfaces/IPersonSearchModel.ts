@@ -1,4 +1,4 @@
-export interface IPersonSearch {
+export interface IPersonSearchModel {
     firstName: string | null,
     lastName: string | null,
 

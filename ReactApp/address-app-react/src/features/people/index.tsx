@@ -1,8 +1,8 @@
 import axios from "axios";
 import React, { FC, Fragment, useEffect, useState } from "react";
 import { IPersonModel } from "../../app/models/people/interfaces/IPersonModel";
-import { IPersonSearch } from "../../app/models/people/interfaces/IPersonSearch";
-import { PersonSearch } from "../../app/models/people/PersonSearch";
+import { IPersonSearchModel } from "../../app/models/people/interfaces/IPersonSearchModel";
+import { PersonSearchModel } from "../../app/models/people/PersonSearchModel";
 import { PeopleGrid } from "./components/peopleGrid";
 import PersonSearchForm from "./components/personSearchForm";
 
@@ -11,7 +11,7 @@ const People: FC = () => {
 
 
     
-    const searchPeople = (personSearchFields: IPersonSearch): void => {
+    const searchPeople = (personSearchFields: IPersonSearchModel): void => {
         axios.post<IPersonModel[]>('https://localhost:7243/api/people/search', personSearchFields).then((response) => {
             if(response && response.data)
             {
@@ -21,7 +21,7 @@ const People: FC = () => {
     }
 
     useEffect(() => {
-        searchPeople(new PersonSearch());
+        searchPeople(new PersonSearchModel());
     }, []);
 
     return(
