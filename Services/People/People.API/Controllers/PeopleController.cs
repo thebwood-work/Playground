@@ -112,6 +112,28 @@ namespace People.API.Controllers
 
         }
 
+        [HttpDelete("{personId}")]
+        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
+        public IActionResult Delete(Guid? personId)
+        {
+            try
+            {
+                var isDeleted = _service.Delete(personId);
+
+                if (isDeleted)
+                {
+                    return Ok(isDeleted);
+                }
+                else
+                    return StatusCode((int)HttpStatusCode.InternalServerError, "Unable to delete the Person.");
+            }
+            catch (Exception ex)
+            {
+                this.Logger.LogError("Error happened on GetPerson by ID", ex);
+                return StatusCode((int)HttpStatusCode.InternalServerError, "A problem happened while handling your request.");
+            }
+        }
 
     }
 }

@@ -59,6 +59,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorApp", "BlazorApp", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddressApp", "BlazorApp\AddressApp\AddressApp.csproj", "{04064E19-E0A8-4790-98EB-8171333B46CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{96A87AD1-4108-4B40-8CEA-C417833B7569}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +111,10 @@ Global
 		{04064E19-E0A8-4790-98EB-8171333B46CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04064E19-E0A8-4790-98EB-8171333B46CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04064E19-E0A8-4790-98EB-8171333B46CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +137,7 @@ Global
 		{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55} = {5995989A-492B-41F6-B054-2603E47C2FCB}
 		{F1ABFD77-5544-4280-B7F0-E97AAF8C59B5} = {5995989A-492B-41F6-B054-2603E47C2FCB}
 		{04064E19-E0A8-4790-98EB-8171333B46CB} = {E42B5E25-40BA-45A9-BC0E-64E152576B65}
+		{96A87AD1-4108-4B40-8CEA-C417833B7569} = {DF89E80A-64CD-48FF-A184-8800AE3CFFED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {272F6777-54A7-4E72-80FD-34D0E6231B52}

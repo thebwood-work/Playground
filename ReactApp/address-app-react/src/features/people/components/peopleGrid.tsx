@@ -11,6 +11,7 @@ import { IPersonModel } from '../../../app/models/people/interfaces/IPersonModel
 import TablePaging from '../../../app/components/tablePaging/tablePaging';
 import AddIcon from '@mui/icons-material/Add';
 import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 import { useNavigate } from 'react-router-dom';
 import { Button, TableHead } from '@mui/material';
 import moment from 'moment';
@@ -18,6 +19,7 @@ import moment from 'moment';
 
 export interface PeopleGridProps {
   rows: IPersonModel[]
+  handleDeleteClick: (id: string | null) => void;
 }
 
 
@@ -71,6 +73,7 @@ export const PeopleGrid = (props: PeopleGridProps) => {
                 <TableCell className="text-white" align="right">First Name</TableCell>
                 <TableCell className="text-white" align="right">Last Name</TableCell>
                 <TableCell className="text-white" align="right">Date of Birth</TableCell>
+                <TableCell className="text-white" align="center">Delete</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -90,15 +93,19 @@ export const PeopleGrid = (props: PeopleGridProps) => {
                   <TableCell style={{ width: 160 }} align="right">
                     {row.lastName}
                   </TableCell>
-
                   <TableCell style={{ width: 160 }} align="right">
                     {row.dateOfBirth ? moment(row.dateOfBirth).format("YYYY-MM-DD") : ""}
+                  </TableCell>
+                  <TableCell style={{ width: 40 }} align="center">
+                  <Button variant="outlined" color="error" onClick={() => { props.handleDeleteClick(row.id); }} startIcon={<DeleteIcon />}>
+                    Delete
+                  </Button>
                   </TableCell>
                 </TableRow>
               ))}
               {emptyRows > 0 && (
                 <TableRow style={{ height: 53 * emptyRows }}>
-                  <TableCell colSpan={6} />
+                  <TableCell colSpan={5} />
                 </TableRow>
               )}
             </TableBody>

@@ -16,7 +16,7 @@ const PersonDetail: FC = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get<PersonDetailModel>('https://localhost:7243/api/people/' + id).then(response => {
+            axios.get<PersonDetailModel>('https://localhost:5010/people/' + id).then(response => {
                 if (response)
                     setPerson(response.data);
                 else {
@@ -31,7 +31,7 @@ const PersonDetail: FC = () => {
 
     const handleSave = () => {
         setErrorMessages([]);
-        axios.post<string[]>('https://localhost:7243/api/people', person).then((errors) => {
+        axios.post<string[]>('https://localhost:5010/people', person).then((errors) => {
             if (errors.data && errors.data.length > 0) {
                 setErrorMessages(errors.data);
             }
