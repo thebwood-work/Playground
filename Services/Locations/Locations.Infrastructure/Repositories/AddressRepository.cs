@@ -29,6 +29,31 @@ namespace Locations.Infrastructure.Repositories
             }
             return true;
         }
+        public List<AddressSearchResults> Search(AddressSearch search)
+        {
+            var results = (from p in _context.Addresses
+                           where (string.IsNullOrWhiteSpace(search.StreetNumber) || p.StreetNumber.Contains(search.StreetNumber)) &&
+                           (string.IsNullOrWhiteSpace(search.StreetName) || p.StreetName.Contains(search.StreetName)) &&
+                           (string.IsNullOrWhiteSpace(search.City) || p.City.Contains(search.City)) &&
+                           (search.StateId == null || p.StateId == p.StateId) &&
+                           (string.IsNullOrWhiteSpace(search.ZipCode) || p.ZipCode.Contains(search.ZipCode))
+                           select new AddressSearchResults
+                           {
+                               Id = p.Id.Value,
+                               StreetNumber = p.StreetNumber,
+                               StreetName = p.StreetName,
+                               City = p.City,
+                               StateName = p.StateName,
+                               ZipCode = p.ZipCode,
+                           })
+                            .OrderBy(a => a.StateName)
+                            .OrderBy(a => a.City)
+                            .Take(1000)
+                            .ToList();
+
+            return results;
+
+        }
 
         public IEnumerable<Address> Get() => _context.Addresses;
 

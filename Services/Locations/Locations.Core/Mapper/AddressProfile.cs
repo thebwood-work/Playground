@@ -10,6 +10,8 @@ namespace Locations.Core.Mapper
         {
             CreateMap<Address, AddressModel>();
             CreateMap<AddressModel, Address>();
+            CreateMap<AddressSearchModel, AddressSearch>();
+            CreateMap<AddressSearchResults, AddressSearchResultsModel>();
         }
     }
 }

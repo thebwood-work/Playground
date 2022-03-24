@@ -1,8 +1,10 @@
 export const REACT_ROUTES = {
     HOME: '/',
     DASHBOARD: '/dashboard',
-    PEOPLE: '/people',
-    PERSONSEARCH: '/people/search',
-    EDITPERSON: '/people/:id',
-    ADDPERSON: '/people/add'
+    PERSONSEARCH: '/people',
+    PERSON: '/people/:id',
+    ADDPERSON: '/people/add',
+    ADDRESSSEARCH: '/addresses',
+    ADDRESS: '/addresses/:id',
+    ADDADDRESS: '/addresses/add',
 };

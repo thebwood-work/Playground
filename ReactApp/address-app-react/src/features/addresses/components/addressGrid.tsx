@@ -14,16 +14,16 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { useNavigate } from 'react-router-dom';
 import { Button, TableHead } from '@mui/material';
 import moment from 'moment';
-import { IPersonsearchResultsModel } from '../../../app/models/people/interfaces/IPersonSearchResultsModel';
+import { IAddressSearchResultsModel } from '../../../app/models/addresses/interfaces/IAddressSearchResultsModel';
+import { REACT_ROUTES } from '../../../app/constants/constant';
 
 
-export interface PeopleGridProps {
-  rows: IPersonsearchResultsModel[]
-  handleDeleteClick: (id: string | null) => void;
+export interface LocationGridProps {
+  rows: IAddressSearchResultsModel[]
 }
 
 
-export const PeopleGrid = (props: PeopleGridProps) => {
+export const AddressGrid = (props: LocationGridProps) => {
   const navigate = useNavigate();
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
@@ -49,10 +49,10 @@ export const PeopleGrid = (props: PeopleGridProps) => {
 
   const handleEditClick = (rowId: string | null) => {
     if (rowId)
-      navigate("/people/" + rowId);
+      navigate(REACT_ROUTES.ADDRESSSEARCH + '/' + rowId);
   }
   const handleAddClick = () => {
-    navigate("/people/add");
+    navigate(REACT_ROUTES.ADDADDRESS);
   }
 
   return (
@@ -70,10 +70,11 @@ export const PeopleGrid = (props: PeopleGridProps) => {
             <TableHead className="bg-primary">
               <TableRow>
                 <TableCell className="text-white" align="center">Edit</TableCell>
-                <TableCell className="text-white" align="right">First Name</TableCell>
-                <TableCell className="text-white" align="right">Last Name</TableCell>
-                <TableCell className="text-white" align="right">Date of Birth</TableCell>
-                <TableCell className="text-white" align="center">Delete</TableCell>
+                <TableCell className="text-white" align="right">Street Number</TableCell>
+                <TableCell className="text-white" align="right">Street Name</TableCell>
+                <TableCell className="text-white" align="right">City</TableCell>
+                <TableCell className="text-white" align="right">State</TableCell>
+                <TableCell className="text-white" align="right">Zip</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -88,24 +89,25 @@ export const PeopleGrid = (props: PeopleGridProps) => {
                     </Button>
                   </TableCell>
                   <TableCell style={{ width: 160 }} align="right">
-                    {row.firstName}
+                    {row.streetNumber}
                   </TableCell>
                   <TableCell style={{ width: 160 }} align="right">
-                    {row.lastName}
+                    {row.streetName}
                   </TableCell>
                   <TableCell style={{ width: 160 }} align="right">
-                    {row.dateOfBirth ? moment(row.dateOfBirth).format("YYYY-MM-DD") : ""}
+                    {row.city}
                   </TableCell>
-                  <TableCell style={{ width: 40 }} align="center">
-                  <Button variant="outlined" color="error" onClick={() => { props.handleDeleteClick(row.id); }} startIcon={<DeleteIcon />}>
-                    Delete
-                  </Button>
+                  <TableCell style={{ width: 160 }} align="right">
+                    {row.stateName}
                   </TableCell>
+                  <TableCell style={{ width: 160 }} align="right">
+                    {row.zipCode}
+                    </TableCell>
                 </TableRow>
               ))}
               {emptyRows > 0 && (
                 <TableRow style={{ height: 53 * emptyRows }}>
-                  <TableCell colSpan={5} />
+                  <TableCell colSpan={6} />
                 </TableRow>
               )}
             </TableBody>
@@ -113,7 +115,7 @@ export const PeopleGrid = (props: PeopleGridProps) => {
               <TableRow>
                 <TablePagination
                   rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
-                  colSpan={5}
+                  colSpan={6}
                   count={props.rows.length}
                   rowsPerPage={rowsPerPage}
                   page={page}

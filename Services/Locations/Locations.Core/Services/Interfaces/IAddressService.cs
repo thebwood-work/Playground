@@ -8,6 +8,6 @@ namespace Locations.Core.Services.Interfaces
         IEnumerable<AddressModel> Get();
         AddressModel Get(Guid? personId);
         bool Delete(Guid? personId);
-
+        List<AddressSearchResultsModel> Search(AddressSearchModel searchRequest);
     }
 }

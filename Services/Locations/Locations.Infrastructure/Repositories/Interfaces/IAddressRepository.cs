@@ -8,5 +8,6 @@ namespace Locations.Infrastructure.Repositories.Interfaces
         Address Get(Guid? addressId);
         void Save(Address address);
         bool Delete(Guid? addressId);
+        List<AddressSearchResults> Search(AddressSearch search);
     }
 }

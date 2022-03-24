@@ -77,8 +77,11 @@ export default function Header() {
               <ListItemButton component="a" href={REACT_ROUTES.HOME}>
                 <ListItemText primary="Home" />
               </ListItemButton>
-              <ListItemButton component="a" href={REACT_ROUTES.PEOPLE}>
+              <ListItemButton component="a" href={REACT_ROUTES.PERSONSEARCH}>
                 <ListItemText primary="People" />
+              </ListItemButton>
+              <ListItemButton component="a" href={REACT_ROUTES.ADDRESSSEARCH}>
+                <ListItemText primary="Addresses" />
               </ListItemButton>
             </List>
 

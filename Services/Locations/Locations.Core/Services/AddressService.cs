@@ -21,6 +21,20 @@ namespace Locations.Core.Services
 
         }
 
+        public List<AddressSearchResultsModel> Search(AddressSearchModel model)
+        {
+            var search = new AddressSearch();
+            _mapper.Map(model, search);
+
+            var searchResults = _repository.Search(search);
+            var searchResultsModel = new List<AddressSearchResultsModel>();
+
+            _mapper.Map(searchResults, searchResultsModel);
+
+            return searchResultsModel;
+
+        }
+
         public bool Delete(Guid? personId)
         {
             try
