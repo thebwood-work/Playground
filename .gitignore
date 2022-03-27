@@ -20,3 +20,9 @@
 /Common/Playground.Core.Base/bin/Debug/net6.0
 /ApiGateways/OcelotApiGw/bin/Debug/net6.0
 /ApiGateways/OcelotApiGw/obj
+/BlazorApp/AddressApp/bin/Debug/net6.0
+/BlazorApp/AddressApp/obj/Debug/net6.0/build-gz
+/Services/Locations/Locations.API/bin/Debug/net6.0
+/Services/People/People.Core/bin/Debug/net6.0
+/Services/People/People.Infrastructure/bin/Debug/net6.0
+/Services/People/People.API/bin/Debug/net6.0

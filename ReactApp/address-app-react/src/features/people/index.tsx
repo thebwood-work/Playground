@@ -21,7 +21,7 @@ const People: FC = () => {
 
     const deletePerson = (rowId: string | null): void => {
         if(rowId && window.confirm('Are you sure you want to delete this person?')) {
-            axios.delete<Boolean>('https://localhost:5010/people/' + rowId).then((response) => {
+            axios.delete<Boolean>(`https://localhost:5010/people/${rowId}`).then((response) => {
                 if(response && response.data)
                 {
                     searchPeople(new PersonSearchModel());

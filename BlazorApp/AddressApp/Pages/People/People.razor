@@ -1,2 +1,15 @@
-﻿<h3>People</h3>
-@page "/people/search"
+﻿@inherits CommonPeopleFunctions
+
+<h3>People</h3>
+@page "/people"
+
+
+
+<div>
+    <div>
+        <PersonSearchForm PeopleSearchStateManagement="_peopleSearchStateManagement" />
+    </div>
+    <div>
+        <PeopleGrid PeopleSearchStateManagement="_peopleSearchStateManagement" />
+    </div>
+</div>

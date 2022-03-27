@@ -6,13 +6,6 @@ namespace AddressApp.BaseClasses
 {
     public class CommonPeopleFunctions : CommonComponent
     {
-        #region Dependency Injection
-
-        [Inject]
-        public PeopleService Service { get; set; }
-
-        #endregion
-
         #region Events
 
         public string GetDateOfBirth(DateTime? dateOfBirth)

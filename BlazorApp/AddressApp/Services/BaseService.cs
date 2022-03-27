@@ -36,5 +36,18 @@ namespace AddressApp.Services
             }
         }
 
+        public async Task<bool> DeleteAPIResult(string baseURL, string apiCall)
+        {
+            using(var httpClient = new HttpClient())
+            {
+                httpClient.BaseAddress = new Uri(baseURL);
+                httpClient.DefaultRequestHeaders.Clear();
+                httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                var response = await httpClient.DeleteAsync(apiCall);
+
+                return response.IsSuccessStatusCode;
+            }
+        }
+
     }
 }

@@ -16,15 +16,12 @@ const PersonDetail: FC = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get<PersonDetailModel>('https://localhost:5010/people/' + id).then(response => {
-                if (response)
-                    setPerson(response.data);
-                else {
-                    let errors = [];
-                    errors.push('Something went wrong');
-                    setErrorMessages(errors);
-                }
-            });
+            axios.get<PersonDetailModel>(`https://localhost:5010/people/${id}`)
+                .then(response => {
+                    if (response)
+                        setPerson(response.data);
+                })
+                .catch((error) => {});
         }
 
     }, []);

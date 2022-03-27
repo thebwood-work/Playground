@@ -5,26 +5,28 @@ namespace AddressApp.Services
     public class PeopleService : BaseService
     {
         #region People
+        private string _baseURL = "https://localhost:5010/";
 
-        public async Task<List<PersonModel>> Get()
+        public async Task<List<PersonSearchResultsModel>> Search(PersonSearchModel searchModel)
         {
-            var baseURL = "https://localhost:44308/";
-            return await this.GetAPIResult<List<PersonModel>>(baseURL, "api/people/");
+            return await this.PostAPIResult<List<PersonSearchResultsModel>, PersonSearchModel>(_baseURL, "people/search", searchModel);
         }
 
-        public async Task<PersonModel> Get(long personId)
+        public async Task<PersonModel> Get(string personId)
         {
-            var baseURL = "https://localhost:44308/";
-            return await this.GetAPIResult<PersonModel>(baseURL, "api/people/" + personId.ToString());
+            return await this.GetAPIResult<PersonModel>(_baseURL, string.Format(String.Format("people/{0}", personId.ToString())));
         }
 
 
-        public async Task<List<string>> Save(PersonModel person)
+        public async Task<List<string>> Save(PersonModel personModel)
         {
-            var baseURL = "https://localhost:44308/";
-            return await this.PostAPIResult<List<string>, PersonModel>(baseURL, "api/people/", person);
+            return await this.PostAPIResult<List<string>, PersonModel>(_baseURL, "people/", personModel);
         }
 
+        public async Task<bool> Delete(string personId)
+        {
+            return await this.DeleteAPIResult(_baseURL, string.Format(String.Format("people/{0}", personId.ToString())));
+        }
         #endregion
 
     }

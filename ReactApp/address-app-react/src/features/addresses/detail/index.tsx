@@ -15,7 +15,7 @@ const AddressDetail: FC = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get<AddressDetailModel>('https://localhost:5010/addresses/' + id).then(response => {
+            axios.get<AddressDetailModel>(`https://localhost:5010/addresses/${id}`).then(response => {
                 if (response)
                     setAddress(response.data);
                 else {

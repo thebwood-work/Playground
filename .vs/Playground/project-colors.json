@@ -80,7 +80,32 @@
       "ProjectGuid": "a97e28f7-39da-4a62-b769-f0360b692063",
       "DisplayName": "Locations.API",
       "ColorIndex": 14
+    },
+    "f026093a-2edd-45b9-a0b1-05392ae54050": {
+      "ProjectGuid": "f026093a-2edd-45b9-a0b1-05392ae54050",
+      "DisplayName": "OcelotApiGw",
+      "ColorIndex": 15
+    },
+    "bed2ec67-4c93-452d-a875-078c39266c21": {
+      "ProjectGuid": "bed2ec67-4c93-452d-a875-078c39266c21",
+      "DisplayName": "OcelotApiGw",
+      "ColorIndex": 0
+    },
+    "96a87ad1-4108-4b40-8cea-c417833b7569": {
+      "ProjectGuid": "96a87ad1-4108-4b40-8cea-c417833b7569",
+      "DisplayName": "OcelotApiGw",
+      "ColorIndex": 1
+    },
+    "3a6f48bf-1e34-42d1-9cf5-725b4a49ebaf": {
+      "ProjectGuid": "3a6f48bf-1e34-42d1-9cf5-725b4a49ebaf",
+      "DisplayName": "Locations.Core",
+      "ColorIndex": 2
+    },
+    "ab0450bc-e264-44cb-ad6f-96de98780867": {
+      "ProjectGuid": "ab0450bc-e264-44cb-ad6f-96de98780867",
+      "DisplayName": "Locations.Infrastructure",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 15
+  "NextColorIndex": 4
 }
