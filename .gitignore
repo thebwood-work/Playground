@@ -26,3 +26,6 @@
 /Services/People/People.Core/bin/Debug/net6.0
 /Services/People/People.Infrastructure/bin/Debug/net6.0
 /Services/People/People.API/bin/Debug/net6.0
+/BlazorApp/BlazorAddressApp/BlazorAddressApp/AddressApp/obj
+/BlazorApp/BlazorAddressApp/BlazorAddressApp/.vs/BlazorAddressApp
+/Services/Locations/Locations.Core/bin/Debug/net6.0

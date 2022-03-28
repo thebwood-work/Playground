@@ -1,0 +1,29 @@
+﻿@inherits CommonPeopleFunctions
+
+<div>
+    <MudTable Striped="true" Bordered="true" Items="@_people" SortLabel="Sort By">
+        <HeaderContent>
+            <MudTh Class ="editButton">Edit</MudTh>
+            <MudTh Class="firstName">First Name</MudTh>
+            <MudTh Class="lastName">Last Name</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd><MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => EditPerson(context.Id))">Edit</MudButton></MudTd>
+            <MudTd>@context.FirstName</MudTd>
+            <MudTd>@context.LastName</MudTd>
+        </RowTemplate>
+    </MudTable>
+</div>
+
+<style>
+    .editButton {
+        width: 10%;
+    }
+
+    .firstName {
+        width: 45%;
+    }
+    .lastName {
+        width: 45%;
+    }
+</style>

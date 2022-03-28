@@ -105,7 +105,32 @@
       "ProjectGuid": "ab0450bc-e264-44cb-ad6f-96de98780867",
       "DisplayName": "Locations.Infrastructure",
       "ColorIndex": 3
+    },
+    "a8ca0db7-2479-4a8a-a8e8-3b425e6edd73": {
+      "ProjectGuid": "a8ca0db7-2479-4a8a-a8e8-3b425e6edd73",
+      "DisplayName": "BlazorAddressApp",
+      "ColorIndex": 4
+    },
+    "07f2896b-0a1c-46b6-b342-351266cebab7": {
+      "ProjectGuid": "07f2896b-0a1c-46b6-b342-351266cebab7",
+      "DisplayName": "BlazorAddressApp",
+      "ColorIndex": 5
+    },
+    "1911dff9-24eb-4d6e-910e-7d240e8c822b": {
+      "ProjectGuid": "1911dff9-24eb-4d6e-910e-7d240e8c822b",
+      "DisplayName": "AddressApp.Client",
+      "ColorIndex": 6
+    },
+    "fe493cb8-4a48-4a0a-b4e4-ecbd049d3430": {
+      "ProjectGuid": "fe493cb8-4a48-4a0a-b4e4-ecbd049d3430",
+      "DisplayName": "AddressApp.Shared",
+      "ColorIndex": 7
+    },
+    "c69f9891-1867-4634-8b93-4b36f084b249": {
+      "ProjectGuid": "c69f9891-1867-4634-8b93-4b36f084b249",
+      "DisplayName": "AddressApp",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 9
 }

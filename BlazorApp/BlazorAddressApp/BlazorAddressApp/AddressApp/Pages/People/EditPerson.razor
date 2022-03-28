@@ -1,0 +1,20 @@
+﻿@inherits CommonPeopleFunctions
+
+@page "/people/{PersonId:guid}"
+<h3>Person</h3>
+
+<EditForm EditContext="_editContext">
+    <DataAnnotationsValidator />
+        <div class="d-flex">
+            <MudTextField @bind-Value="@_person.FirstName" Label="First Name"></MudTextField>
+            <ValidationMessage For="() => _person.FirstName" />
+        </div>
+        <div class="d-flex">
+            <MudTextField @bind-Value="@_person.LastName" Label="Last Name"></MudTextField>
+            <ValidationMessage For="() => _person.LastName" />
+        </div>
+        <div class="d-flex oi-align-right">
+            <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Save" Color="Color.Info" OnClick="@SavePerson">Save</MudButton>
+            <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Cancel" Color="Color.Error" OnClick="@CancelSave">Reset</MudButton>
+        </div>
+</EditForm>

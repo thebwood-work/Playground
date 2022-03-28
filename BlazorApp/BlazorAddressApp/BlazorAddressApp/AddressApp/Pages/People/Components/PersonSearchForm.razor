@@ -1,0 +1,23 @@
+﻿@inherits CommonPeopleFunctions
+
+<MudCard>
+    <MudCardContent Class="personSearch">
+
+
+        <div class="d-flex">
+
+            <MudTextField @bind-Value="@_searchModel.FirstName" Label="First Name"></MudTextField>
+            <MudTextField  @bind-Value="@_searchModel.LastName" Label="Last Name"></MudTextField>
+        </div>
+        <div class="d-flex float-right">
+            <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Search" Color="Color.Info" OnClick="@Search">Search</MudButton>
+            <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Clear" Color="Color.Error" OnClick="@Reset">Reset</MudButton>
+
+        </div>
+    </MudCardContent>
+</MudCard>
+<style>
+    .personSearch {
+        padding: 1%;
+    }
+</style>
