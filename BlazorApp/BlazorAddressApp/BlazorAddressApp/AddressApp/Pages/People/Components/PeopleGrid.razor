@@ -1,18 +1,22 @@
 ﻿@inherits CommonPeopleFunctions
 
-<div>
-    <MudTable Striped="true" Bordered="true" Items="@_people" SortLabel="Sort By">
-        <HeaderContent>
-            <MudTh Class ="editButton">Edit</MudTh>
-            <MudTh Class="firstName">First Name</MudTh>
-            <MudTh Class="lastName">Last Name</MudTh>
-        </HeaderContent>
-        <RowTemplate>
-            <MudTd><MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => EditPerson(context.Id))">Edit</MudButton></MudTd>
-            <MudTd>@context.FirstName</MudTd>
-            <MudTd>@context.LastName</MudTd>
-        </RowTemplate>
-    </MudTable>
+<div class="row">
+    <div class="col-12">
+        <MudTable Striped="true" Bordered="true" Items="@_people" SortLabel="Sort By">
+            <HeaderContent>
+                <MudTh Class ="editButton">Edit</MudTh>
+                <MudTh Class="firstName">First Name</MudTh>
+                <MudTh Class="lastName">Last Name</MudTh>
+                <MudTh Class="dateOfBirth">Date of Birth</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd><MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => EditPerson(context.Id))">Edit</MudButton></MudTd>
+                <MudTd>@context.FirstName</MudTd>
+                <MudTd>@context.LastName</MudTd>
+                <MudTd>@this.GetDateOfBirth(@context.DateOfBirth)</MudTd>
+            </RowTemplate>
+        </MudTable>
+    </div>
 </div>
 
 <style>
@@ -21,9 +25,13 @@
     }
 
     .firstName {
-        width: 45%;
+        width: 35%;
     }
     .lastName {
-        width: 45%;
+        width: 35%;
+    }
+    .dateOfBirth{
+        width: 20%;
+
     }
 </style>

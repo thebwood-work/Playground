@@ -20,7 +20,7 @@ namespace AddressApp.Services
 
         public async Task<List<string>> Save(PersonModel personModel)
         {
-            return await this.PostAPIResult<List<string>, PersonModel>(_baseURL, "people/", personModel);
+            return await this.PostAPIResult<List<string>, PersonModel>(_baseURL, "people", personModel);
         }
 
         public async Task<bool> Delete(string personId)

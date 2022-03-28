@@ -14,7 +14,7 @@ namespace AddressApp.Services
 
         public async Task<List<AddressSearchResultsModel>> Search(AddressSearchModel search)
         {
-            return await this.PostAPIResult<List<AddressSearchResultsModel>, AddressSearchModel>(_baseURL, "addresses/", search);
+            return await this.PostAPIResult<List<AddressSearchResultsModel>, AddressSearchModel>(_baseURL, "addresses/search", search);
         }
 
         public async Task<AddressModel> Get(string addressId)
@@ -25,7 +25,7 @@ namespace AddressApp.Services
 
         public async Task<List<string>> Save(AddressModel address)
         {
-            return await this.PostAPIResult<List<string>, AddressModel>(_baseURL, "addresses/", address);
+            return await this.PostAPIResult<List<string>, AddressModel>(_baseURL, "addresses", address);
         }
 
         public async Task<bool> Delete(string addressId)

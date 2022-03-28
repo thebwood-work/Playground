@@ -26,7 +26,7 @@ namespace AddressApp.Pages.People
 
         #region Events
 
-        private void AddGame()
+        private void AddPerson()
         {
             this.NavigationManager.NavigateTo("games/Add");
 

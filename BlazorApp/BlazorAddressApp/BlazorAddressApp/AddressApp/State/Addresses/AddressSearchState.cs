@@ -25,13 +25,13 @@ namespace AddressApp.State.Addresses
         public async Task Search(AddressSearchModel searchModel)
         {
             var results = await _locationService.Search(searchModel);
-            OnPeopleSearched?.Invoke(results);
+            OnAddressSearched?.Invoke(results);
         }
 
         #endregion
 
         #region Actions
-        public Action<List<AddressSearchResultsModel>> OnPeopleSearched { get; set; }
+        public Action<List<AddressSearchResultsModel>> OnAddressSearched { get; set; }
         #endregion
 
 

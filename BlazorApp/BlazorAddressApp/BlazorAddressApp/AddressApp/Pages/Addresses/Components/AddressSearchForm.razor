@@ -1,5 +1,38 @@
-﻿<h3>AddressSearchForm</h3>
+﻿@inherits CommonLocationFunctions
 
-@code {
-
-}
+<MudCard>
+    <MudCardContent Class="addressSearch">
+        <div class="row mb-2">
+            <div class="col-6">
+                <MudTextField @bind-Value="@_searchModel.StreetNumber" Label="Street Number"></MudTextField>
+            </div>
+            <div class="col-6">
+                <MudTextField  @bind-Value="@_searchModel.StreetName" Label="Street Name"></MudTextField>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-6">
+                <MudTextField @bind-Value="@_searchModel.City" Label="City"></MudTextField>
+            </div>
+            <div class="col-6">
+                <MudTextField  @bind-Value="@_searchModel.StateId" Label="State"></MudTextField>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-6">
+                <MudTextField  @bind-Value="@_searchModel.ZipCode" Label="Zip Code"></MudTextField>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Search" Color="Color.Info" OnClick="@Search">Search</MudButton>
+                <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Clear" Color="Color.Error" OnClick="@Reset">Reset</MudButton>
+            </div>
+        </div>
+    </MudCardContent>
+</MudCard>
+<style>
+    .addressSearch {
+        padding: 1%;
+    }
+</style>

@@ -1,5 +1,46 @@
-﻿<h3>AddressGrid</h3>
+﻿@inherits CommonLocationFunctions
 
-@code {
+<div class="row">
+    <div class="col-12">
+        <MudTable Striped="true" Bordered="true" Items="@_addresses" SortLabel="Sort By">
+            <HeaderContent>
+                <MudTh Class ="editButton">Edit</MudTh>
+                <MudTh Class="streetNumber">Street Number</MudTh>
+                <MudTh Class="streetName">Street Name</MudTh>
+                <MudTh Class="city">City</MudTh>
+                <MudTh Class="stateName">State</MudTh>
+                <MudTh Class="zipCode">Zip</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd><MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="@(() => EditAddress(context.Id))">Edit</MudButton></MudTd>
+                <MudTd>@context.StreetNumber</MudTd>
+                <MudTd>@context.StreetName</MudTd>
+                <MudTd>@context.City</MudTd>
+                <MudTd>@context.StateName</MudTd>
+                <MudTd>@context.ZipCode</MudTd>
+            </RowTemplate>
+        </MudTable>
+    </div>
+</div>
 
-}
+<style>
+    .editButton {
+        width: 10%;
+    }
+
+    .streetNumber {
+        width: 20%;
+    }
+    .streetName {
+        width: 20%;
+    }
+    .city {
+        width: 20%;
+    }
+    .stateName {
+        width: 20%;
+    }
+    .zipCode {
+        width: 10%;
+    }
+</style>
