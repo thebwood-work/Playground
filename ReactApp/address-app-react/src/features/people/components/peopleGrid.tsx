@@ -14,11 +14,11 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { useNavigate } from 'react-router-dom';
 import { Button, TableHead } from '@mui/material';
 import moment from 'moment';
-import { IPersonsearchResultsModel } from '../../../app/models/people/interfaces/IPersonSearchResultsModel';
+import { IPersonSearchResultsModel } from '../../../app/models/people/interfaces/IPersonSearchResultsModel';
 
 
 export interface PeopleGridProps {
-  rows: IPersonsearchResultsModel[]
+  rows: IPersonSearchResultsModel[]
   handleDeleteClick: (id: string | null) => void;
 }
 

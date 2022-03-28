@@ -1,13 +1,14 @@
 import { Alert, Button, Container, TextField } from "@mui/material";
-import axios from "axios";
 import moment from "moment";
 import React, { FC, Fragment, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { IPersonDetailModel } from "../../../app/models/people/interfaces/IPersonDetailModel";
 import { PersonDetailModel } from "../../../app/models/people/PersonDetailModel";
+import PeopleService from "../../../app/services/peopleService";
 
 
 const PersonDetail: FC = () => {
+    const peopleService = new PeopleService();
     const navigate = useNavigate();
     const { id } = useParams();
     const [person, setPerson] = useState<IPersonDetailModel>(new PersonDetailModel());
@@ -16,10 +17,10 @@ const PersonDetail: FC = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get<PersonDetailModel>(`https://localhost:5010/people/${id}`)
+            peopleService.loadPerson(id)
                 .then(response => {
                     if (response)
-                        setPerson(response.data);
+                        setPerson(response);
                 })
                 .catch((error) => {});
         }
@@ -28,9 +29,9 @@ const PersonDetail: FC = () => {
 
     const handleSave = () => {
         setErrorMessages([]);
-        axios.post<string[]>('https://localhost:5010/people', person).then((errors) => {
-            if (errors.data && errors.data.length > 0) {
-                setErrorMessages(errors.data);
+        peopleService.savePerson(person).then((errors) => {
+            if (errors && errors.length > 0) {
+                setErrorMessages(errors);
             }
             else {
                 navigate("/people");

@@ -1,6 +1,6 @@
-import { IPersonsearchResultsModel } from "./interfaces/IPersonSearchResultsModel";
+import { IPersonSearchResultsModel } from "./interfaces/IPersonSearchResultsModel";
 
-export class PersonsearchResultsModel implements IPersonsearchResultsModel{
+export class PersonSearchResultsModel implements IPersonSearchResultsModel{
     id: string | null = null;
     firstName: string | null = '';
     lastName: string | null = '';

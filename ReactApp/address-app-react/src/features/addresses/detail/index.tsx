@@ -1,12 +1,13 @@
 import { Alert, Button, Container, TextField } from "@mui/material";
-import axios from "axios";
 import React, { FC, Fragment, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AddressDetailModel } from "../../../app/models/addresses/AddressDetailModel";
 import { IAddressDetailModel } from "../../../app/models/addresses/interfaces/IAddressDetailModel";
+import AddressService from "../../../app/services/addressService";
 
 
 const AddressDetail: FC = () => {
+    const addressService = new AddressService();
     const navigate = useNavigate();
     const { id } = useParams();
     const [address, setAddress] = useState<IAddressDetailModel>(new AddressDetailModel());
@@ -15,9 +16,9 @@ const AddressDetail: FC = () => {
 
     useEffect(() => {
         if (id) {
-            axios.get<AddressDetailModel>(`https://localhost:5010/addresses/${id}`).then(response => {
+            addressService.loadAddress(id).then(response => {
                 if (response)
-                    setAddress(response.data);
+                    setAddress(response);
                 else {
                     let errors = [];
                     errors.push('Something went wrong');
@@ -30,9 +31,9 @@ const AddressDetail: FC = () => {
 
     const handleSave = () => {
         setErrorMessages([]);
-        axios.post<string[]>('https://localhost:5010/addresses', address).then((errors) => {
-            if (errors.data && errors.data.length > 0) {
-                setErrorMessages(errors.data);
+        addressService.saveAddress(address).then((errors) => {
+            if (errors && errors.length > 0) {
+                setErrorMessages(errors);
             }
             else {
                 navigate("/addresses");
