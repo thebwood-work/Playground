@@ -29,3 +29,6 @@
 /BlazorApp/BlazorAddressApp/BlazorAddressApp/AddressApp/obj
 /BlazorApp/BlazorAddressApp/BlazorAddressApp/.vs/BlazorAddressApp
 /Services/Locations/Locations.Core/bin/Debug/net6.0
+/Services/ReferenceData/ReferenceData.Infrastructure/obj
+/Services/ReferenceData/ReferenceData.Core/obj
+/Services/ReferenceData/ReferenceData.API/obj

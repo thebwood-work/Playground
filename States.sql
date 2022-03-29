@@ -1,4 +1,4 @@
-﻿USE [Locations]
+﻿USE [RefData]
 GO
 
 /****** Object:  Table [dbo].[States]    Script Date: 3/10/2022 11:02:52 AM ******/

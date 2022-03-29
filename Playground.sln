@@ -46,8 +46,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55}"
 	ProjectSection(SolutionItems) = preProject
 		Address.sql = Address.sql
-		Countries.sql = Countries.sql
-		States.sql = States.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{F1ABFD77-5544-4280-B7F0-E97AAF8C59B5}"
@@ -56,6 +54,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{F1ABFD
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{96A87AD1-4108-4B40-8CEA-C417833B7569}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceData", "ReferenceData", "{2F28D57E-FE7C-4E68-B9CD-836C8169DE40}"
+	ProjectSection(SolutionItems) = preProject
+		Countries.sql = Countries.sql
+		InsertCountries.sql = InsertCountries.sql
+		InsertStates.sql = InsertStates.sql
+		States.sql = States.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceData", "ReferenceData", "{7FB4CD20-F33E-45B0-B18F-080DF5D64E4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceData.API", "Services\ReferenceData\ReferenceData.API\ReferenceData.API.csproj", "{48038B02-C27B-4017-A5EF-DB42F621D415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceData.Core", "Services\ReferenceData\ReferenceData.Core\ReferenceData.Core.csproj", "{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceData.Infrastructure", "Services\ReferenceData\ReferenceData.Infrastructure\ReferenceData.Infrastructure.csproj", "{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,6 +121,18 @@ Global
 		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{96A87AD1-4108-4B40-8CEA-C417833B7569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48038B02-C27B-4017-A5EF-DB42F621D415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48038B02-C27B-4017-A5EF-DB42F621D415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48038B02-C27B-4017-A5EF-DB42F621D415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48038B02-C27B-4017-A5EF-DB42F621D415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +155,11 @@ Global
 		{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55} = {5995989A-492B-41F6-B054-2603E47C2FCB}
 		{F1ABFD77-5544-4280-B7F0-E97AAF8C59B5} = {5995989A-492B-41F6-B054-2603E47C2FCB}
 		{96A87AD1-4108-4B40-8CEA-C417833B7569} = {DF89E80A-64CD-48FF-A184-8800AE3CFFED}
+		{2F28D57E-FE7C-4E68-B9CD-836C8169DE40} = {5995989A-492B-41F6-B054-2603E47C2FCB}
+		{7FB4CD20-F33E-45B0-B18F-080DF5D64E4B} = {8EF906F1-546C-479F-A932-08EA7B99AC26}
+		{48038B02-C27B-4017-A5EF-DB42F621D415} = {7FB4CD20-F33E-45B0-B18F-080DF5D64E4B}
+		{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611} = {7FB4CD20-F33E-45B0-B18F-080DF5D64E4B}
+		{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA} = {7FB4CD20-F33E-45B0-B18F-080DF5D64E4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {272F6777-54A7-4E72-80FD-34D0E6231B52}

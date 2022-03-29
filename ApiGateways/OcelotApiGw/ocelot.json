@@ -73,7 +73,34 @@
       ],
       "UpstreamPathTemplate": "/addresses/search",
       "UpstreamHttpMethod": [ "POST" ]
+    },
+    //ReferenceData API
+    {
+      "DownstreamPathTemplate": "/api/refdata/countries",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7170
+        }
+      ],
+      "UpstreamPathTemplate": "/refdata/countries",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/refdata/states",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7170
+        }
+      ],
+      "UpstreamPathTemplate": "/refdata/states",
+      "UpstreamHttpMethod": [ "GET" ]
     }
+
+
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:5010"
