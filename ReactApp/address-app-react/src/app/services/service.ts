@@ -7,6 +7,8 @@ import { PersonDetailModel } from "../models/people/PersonDetailModel";
 import { PersonModel } from "../models/people/PersonModel";
 import { PersonSearchModel } from "../models/people/PersonSearchModel";
 import { PersonSearchResultsModel } from "../models/people/PersonSearchResultsModel";
+import { CountryModel } from "../models/refData/CountryModel";
+import { StateModel } from "../models/refData/StateModel";
 
 
 axios.defaults.baseURL = 'https://localhost:5010';
@@ -59,10 +61,21 @@ const Addresses = {
     }
 
 }
+const RefData = {
 
+    countries: () => {
+        return axios.get<CountryModel[]>('/refdata/countries')
+            .then(responseBody)
+    },
+    states: () => {
+        return axios.get<StateModel[]>('/refdata/states')
+            .then(responseBody)
+    }
+}
 const Service = {
     People,
-    Addresses
+    Addresses,
+    RefData
 }
 
 export default Service;

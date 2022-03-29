@@ -15,8 +15,8 @@ namespace ReferenceData.Infrastructure.Repositories
         }
 
 
-        public IEnumerable<Country> GetCountries() => _context.Countries;
+        public IEnumerable<Country> GetCountries() => _context.Countries.OrderBy(a => a.Name);
 
-        public IEnumerable<State> GetStates() => _context.States;
+        public IEnumerable<State> GetStates() => _context.States.OrderBy(a => a.Name);
     }
 }

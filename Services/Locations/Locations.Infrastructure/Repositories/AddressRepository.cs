@@ -35,7 +35,7 @@ namespace Locations.Infrastructure.Repositories
                            where (string.IsNullOrWhiteSpace(search.StreetNumber) || p.StreetNumber.Contains(search.StreetNumber)) &&
                            (string.IsNullOrWhiteSpace(search.StreetName) || p.StreetName.Contains(search.StreetName)) &&
                            (string.IsNullOrWhiteSpace(search.City) || p.City.Contains(search.City)) &&
-                           (search.StateId == null || p.StateId == p.StateId) &&
+                           (search.StateId == null || p.StateId == search.StateId) &&
                            (string.IsNullOrWhiteSpace(search.ZipCode) || p.ZipCode.Contains(search.ZipCode))
                            select new AddressSearchResults
                            {

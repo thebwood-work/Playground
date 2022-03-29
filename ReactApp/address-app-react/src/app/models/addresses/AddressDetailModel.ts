@@ -6,6 +6,8 @@ export class AddressDetailModel implements IAddressDetailModel{
     streetName: string | null = null;
     city: string | null = null;
     stateId: string | null = null;
+    stateName: string | null = null;
+    stateAbbreviation: string | null = null;
     zipCode: string | null = null;
 
 }
