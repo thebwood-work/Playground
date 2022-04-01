@@ -5,18 +5,19 @@ using People.Core.Services.Interfaces;
 using People.Infrastructure.Entities;
 using People.Infrastructure.Repositories.Interfaces;
 using Playground.Core.Base.Services;
-
+using MassTransit;
 namespace People.Core.Services
 {
     public class PeopleService : PlaygroundService<PeopleService>, IPeopleService
     {
         private readonly IPeopleRepository _repository;
         private readonly IMapper _mapper;
-
-        public PeopleService(ILogger<PeopleService> logger, IPeopleRepository respository, IMapper mapper) : base(logger)
+        private readonly IPublishEndpoint _publishEndpoint;
+        public PeopleService(ILogger<PeopleService> logger, IPeopleRepository respository, IMapper mapper, IPublishEndpoint publishEndpoint) : base(logger)
         {
             _repository = respository ?? throw new ArgumentNullException();
             _mapper = mapper ?? throw new ArgumentNullException();
+            _publishEndpoint = publishEndpoint ?? throw new ArgumentNullException();
         }
 
         public bool Delete(Guid? personId)
@@ -59,7 +60,7 @@ namespace People.Core.Services
             return gameModel;
         }
 
-        public List<string> Save(PersonModel person)
+        public async Task<List<string>> Save(PersonModel person)
         {
             var errors = Validate(person);
             if (errors.Count() == 0)
@@ -68,8 +69,17 @@ namespace People.Core.Services
                 if (person.Id != null)
                     existingPerson = _repository.Get(person.Id);
 
+
                 _mapper.Map<PersonModel, Person>(person, existingPerson);
-                _repository.Save(existingPerson);
+                existingPerson = _repository.Save(existingPerson);
+
+                if(person.PersonAddress != null)
+                {
+                    person.PersonAddress.PersonId = existingPerson.Id;
+                    await _publishEndpoint.Publish<PersonAddressModel>(person.PersonAddress);
+
+                }
+
             }
 
             return errors;

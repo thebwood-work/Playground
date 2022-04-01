@@ -1,9 +1,11 @@
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using People.Core.Services;
 using People.Core.Services.Interfaces;
 using People.Infrastructure.Entities;
 using People.Infrastructure.Repositories;
 using People.Infrastructure.Repositories.Interfaces;
+using RabbitMQ.Client;
 
 var siteCorsPolicy = "SiteCorsPolicy";
 
@@ -22,7 +24,14 @@ builder.Services.AddCors(options =>
         });
 });
 
+
+
 // Add services to the container.
+builder.Services.AddMassTransit(config => {
+    config.UsingRabbitMq((ctx, cfg) => {
+        cfg.Host("amqp://guest:guest@localhost:5672");
+    });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<IPeopleRepository, PeopleRepository>();

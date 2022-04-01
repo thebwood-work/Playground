@@ -9,5 +9,6 @@ namespace Locations.Core.Services.Interfaces
         AddressModel Get(Guid? personId);
         bool Delete(Guid? personId);
         List<AddressSearchResultsModel> Search(AddressSearchModel searchRequest);
+        void SavePeopleAddresses(PersonAddressModel model);
     }
 }

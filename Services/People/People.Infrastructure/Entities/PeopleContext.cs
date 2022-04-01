@@ -70,6 +70,8 @@ namespace People.Infrastructure.Entities
                     .HasMaxLength(10)
                     .IsUnicode(false);
 
+                entity.Property(e => e.CountryId).HasColumnName("CountryID");
+
                 entity.Property(e => e.CountryName)
                     .HasMaxLength(50)
                     .IsUnicode(false);

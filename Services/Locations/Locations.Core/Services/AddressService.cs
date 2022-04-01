@@ -65,27 +65,27 @@ namespace Locations.Core.Services
             return results;
         }
 
-        public AddressModel Get(Guid? personId)
+        public AddressModel Get(Guid? addressId)
         {
-            var game = _repository.Get(personId);
-            var gameModel = new AddressModel();
+            var address = _repository.Get(addressId);
+            var addressModel = new AddressModel();
 
-            _mapper.Map(game, gameModel);
+            _mapper.Map(address, addressModel);
 
-            return gameModel;
+            return addressModel;
         }
 
-        public List<string> Save(AddressModel person)
+        public List<string> Save(AddressModel address)
         {
-            var errors = Validate(person);
+            var errors = Validate(address);
             if (errors.Count() == 0)
             {
-                var existingPerson = new Address();
-                if (person.Id != null)
-                    existingPerson = _repository.Get(person.Id);
+                var existingAddress = new Address();
+                if (address.Id != null)
+                    existingAddress = _repository.Get(address.Id);
 
-                _mapper.Map<AddressModel, Address>(person, existingPerson);
-                _repository.Save(existingPerson);
+                _mapper.Map<AddressModel, Address>(address, existingAddress);
+                _repository.Save(existingAddress);
             }
 
             return errors;
@@ -104,6 +104,37 @@ namespace Locations.Core.Services
                 errors.Add("City is required");
             }
             return errors;
+        }
+
+        public void SavePeopleAddresses(PersonAddressModel model)
+        {
+            foreach (var address in model.Addresses)
+            {
+                var existingAddress = new Address();
+                var personAddress = new PeopleAddress();
+                personAddress.PersonId = model.PersonId;
+
+                if (address.Id != null)
+                    existingAddress = _repository.Get(address.Id);
+
+                _mapper.Map<AddressModel, Address>(address, existingAddress);
+                existingAddress = _repository.Save(existingAddress);
+                personAddress.AddressId = existingAddress.Id;
+                
+                _repository.SavePersonAddress(personAddress);
+            }
+            DeletePeopleAddresses(model);
+        }
+
+        private void DeletePeopleAddresses(PersonAddressModel model)
+        {
+            var existingPeopleAddresses = _repository.GetPeopleAddressesByPersonId(model.PersonId.Value);
+            var deletePeopleAddresses = existingPeopleAddresses.Where(x => !model.Addresses.Any(y => x.Id == y.Id));
+
+            foreach (var deletePersonAddress in deletePeopleAddresses)
+            {
+                _repository.DeletePersonAddress(deletePersonAddress.Id.Value);
+            }
         }
     }
 }

@@ -6,8 +6,12 @@ namespace Locations.Infrastructure.Repositories.Interfaces
     {
         IEnumerable<Address> Get();
         Address Get(Guid? addressId);
-        void Save(Address address);
+        Address Save(Address address);
         bool Delete(Guid? addressId);
         List<AddressSearchResults> Search(AddressSearch search);
+
+        IEnumerable<PeopleAddress> GetPeopleAddressesByPersonId(Guid personId);
+        void SavePersonAddress(PeopleAddress address);
+        public bool DeletePersonAddress(Guid id);
     }
 }

@@ -59,13 +59,44 @@ namespace Locations.Infrastructure.Repositories
 
         public Address Get(Guid? addressId) => _context.Addresses.Where(x => x.Id == addressId).SingleOrDefault();
 
-        public void Save(Address address)
+        public Address Save(Address address)
         {
             if (address.Id != null)
                 _context.Addresses.Update(address);
             else
                 _context.Addresses.Add(address);
             _context.SaveChanges();
+            return address;
+
+        }
+
+        public PeopleAddress GetPeopleAddressByID(Guid id) => _context.PeopleAddresses.Where(x => x.Id == id).SingleOrDefault();
+
+        public IEnumerable<PeopleAddress> GetPeopleAddressesByPersonId(Guid personId) => _context.PeopleAddresses.Where(x => x.PersonId == personId);
+
+        public void SavePersonAddress(PeopleAddress address)
+        {
+            if (address.Id != null)
+                _context.PeopleAddresses.Update(address);
+            else
+                _context.PeopleAddresses.Add(address);
+            _context.SaveChanges();
+        }
+
+        public bool DeletePersonAddress(Guid id)
+        {
+            try
+            {
+                var personAddress = GetPeopleAddressByID(id);
+                _context.PeopleAddresses.Remove(personAddress);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                this.Logger.LogError("", ex);
+                return false;
+            }
+            return true;
         }
     }
 }

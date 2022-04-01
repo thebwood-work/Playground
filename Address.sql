@@ -18,7 +18,7 @@ CREATE TABLE [dbo].[Addresses](
 	[StateAbbreviation] [varchar](5) NULL,
 	[StateName] [varchar](50) NULL,
 	[ZipCode] [varchar](20) NULL,
-	[CountryId] [uniqueidentifier] NULL,
+	[CountryID] [uniqueidentifier] NULL,
 	[CountryAbbreviation] [varchar](10) NULL,
 	[CountryName] [varchar](50) NULL,
  CONSTRAINT [PK_Addresses] PRIMARY KEY CLUSTERED 

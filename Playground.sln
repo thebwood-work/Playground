@@ -46,6 +46,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{FA90E80E-8B18-4D7B-9CB3-8097A26AFC55}"
 	ProjectSection(SolutionItems) = preProject
 		Address.sql = Address.sql
+		PeopleAddress.sql = PeopleAddress.sql
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "People", "People", "{F1ABFD77-5544-4280-B7F0-E97AAF8C59B5}"
@@ -65,11 +66,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceData", "ReferenceD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceData", "ReferenceData", "{7FB4CD20-F33E-45B0-B18F-080DF5D64E4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceData.API", "Services\ReferenceData\ReferenceData.API\ReferenceData.API.csproj", "{48038B02-C27B-4017-A5EF-DB42F621D415}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceData.API", "Services\ReferenceData\ReferenceData.API\ReferenceData.API.csproj", "{48038B02-C27B-4017-A5EF-DB42F621D415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceData.Core", "Services\ReferenceData\ReferenceData.Core\ReferenceData.Core.csproj", "{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceData.Core", "Services\ReferenceData\ReferenceData.Core\ReferenceData.Core.csproj", "{6E7A0D6D-74DA-457B-8D36-F88D1C8DE611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceData.Infrastructure", "Services\ReferenceData\ReferenceData.Infrastructure\ReferenceData.Infrastructure.csproj", "{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceData.Infrastructure", "Services\ReferenceData\ReferenceData.Infrastructure\ReferenceData.Infrastructure.csproj", "{7F2BE1F4-7EA4-4184-B86E-150C2AE0D2DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

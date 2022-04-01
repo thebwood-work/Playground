@@ -6,7 +6,7 @@ namespace People.Infrastructure.Repositories.Interfaces
     {
         IEnumerable<Person> Get();
         Person Get(Guid? personId);
-        void Save(Person person);
+        Person Save(Person person);
         bool Delete(Guid? personId);
         List<PersonSearchResults> Search(PersonSearch personSearch);
     }

@@ -18,6 +18,7 @@ namespace Locations.Infrastructure.Entities
 
         public virtual DbSet<Address> Addresses { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
+        public virtual DbSet<PeopleAddress> PeopleAddresses { get; set; }
         public virtual DbSet<State> States { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -81,6 +82,17 @@ namespace Locations.Infrastructure.Entities
                     .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
+            });
+
+            modelBuilder.Entity<PeopleAddress>(entity =>
+            {
+                entity.Property(e => e.Id)
+                    .HasColumnName("ID")
+                    .HasDefaultValueSql("(newid())");
+
+                entity.Property(e => e.AddressId).HasColumnName("AddressID");
+
+                entity.Property(e => e.PersonId).HasColumnName("PersonID");
             });
 
             modelBuilder.Entity<State>(entity =>

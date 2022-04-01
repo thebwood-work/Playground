@@ -34,13 +34,15 @@ namespace People.Infrastructure.Repositories
 
         public Person Get(Guid? personId) => _context.People.Where(x => x.Id == personId).SingleOrDefault();
 
-        public void Save(Person person)
+        public Person Save(Person person)
         {
             if (person.Id != null)
                 _context.People.Update(person);
             else
                 _context.People.Add(person);
             _context.SaveChanges();
+
+            return person;
         }
 
         public List<PersonSearchResults> Search(PersonSearch personSearch)

@@ -70,13 +70,13 @@ namespace People.API.Controllers
         [HttpPost]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-        public IActionResult Save([FromBody] PersonModel person)
+        public async Task<IActionResult> Save([FromBody] PersonModel person)
         {
             var errorList = new List<string>();
 
             try
             {
-                errorList = _service.Save(person);
+                errorList = await _service.Save(person);
                 if (errorList.Count > 0)
                 {
                     return BadRequest(errorList);

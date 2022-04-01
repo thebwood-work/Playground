@@ -19,7 +19,7 @@ CREATE TABLE [dbo].[People](
 	[StateID] [uniqueidentifier] NULL,
 	[StateAbbreviation] [varchar](5) NULL,
 	[StateName] [varchar](50) NULL,
-	[CountryId] [uniqueidentifier] NULL,
+	[CountryID] [uniqueidentifier] NULL,
 	[CountryAbbreviation] [varchar](10) NULL,
 	[CountryName] [varchar](50) NULL,
  CONSTRAINT [PK_People] PRIMARY KEY CLUSTERED 

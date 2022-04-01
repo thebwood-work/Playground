@@ -3,7 +3,10 @@ using Locations.Core.Services.Interfaces;
 using Locations.Infrastructure.Entities;
 using Locations.Infrastructure.Repositories;
 using Locations.Infrastructure.Repositories.Interfaces;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using Locations.Core.Models;
+using Locations.API.Consumers;
 
 var siteCorsPolicy = "SiteCorsPolicy";
 
@@ -23,6 +26,18 @@ builder.Services.AddCors(options =>
 });
 
 // Add services to the container.
+builder.Services.AddMassTransit(config => {
+
+    config.AddConsumer<PeopleAddressConsumer>();
+
+    config.UsingRabbitMq((context, config) => {
+        config.Host("amqp://guest:guest@localhost:5672");
+
+        config.ReceiveEndpoint("people.address", c => {
+            c.ConfigureConsumer<PeopleAddressConsumer>(context);
+        });
+    });
+});
 
 builder.Services.AddControllers();
 builder.Services.AddTransient<IAddressRepository, AddressRepository>();
