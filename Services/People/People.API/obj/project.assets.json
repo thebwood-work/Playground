@@ -9313,28 +9313,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brian\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\brian.wood\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.API\\People.API.csproj",
+      "projectUniqueName": "C:\\Dev\\Github\\Playground\\Services\\People\\People.API\\People.API.csproj",
       "projectName": "People.API",
-      "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.API\\People.API.csproj",
-      "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.API\\obj\\",
+      "projectPath": "C:\\Dev\\Github\\Playground\\Services\\People\\People.API\\People.API.csproj",
+      "packagesPath": "C:\\Users\\brian.wood\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Github\\Playground\\Services\\People\\People.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\brian.wood\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -9347,11 +9339,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
-              "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj"
+            "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
+              "projectPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj"
             },
-            "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Core\\People.Core.csproj": {
-              "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Core\\People.Core.csproj"
+            "C:\\Dev\\Github\\Playground\\Services\\People\\People.Core\\People.Core.csproj": {
+              "projectPath": "C:\\Dev\\Github\\Playground\\Services\\People\\People.Core\\People.Core.csproj"
             }
           }
         }
@@ -9401,7 +9393,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
