@@ -32,3 +32,8 @@
 /Services/ReferenceData/ReferenceData.Infrastructure/obj
 /Services/ReferenceData/ReferenceData.Core/obj
 /Services/ReferenceData/ReferenceData.API/obj
+/Services/IdentityAndSecurity/IdentityAndSecurity.API/obj
+/Services/IdentityAndSecurity/IdentityAndSecurity.Core/bin/Debug/net6.0
+/Services/IdentityAndSecurity/IdentityAndSecurity.Core/obj
+/Services/IdentityAndSecurity/IdentityAndSecurity.Infrastructure/bin/Debug/net6.0
+/Services/IdentityAndSecurity/IdentityAndSecurity.Infrastructure/obj

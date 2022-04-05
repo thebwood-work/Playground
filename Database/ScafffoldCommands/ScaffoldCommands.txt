@@ -1,3 +1,7 @@
 Scaffold-DbContext " Server=localhost;Database=People;Trusted_Connection=True " Microsoft.EntityFrameworkCore.SqlServer -Force -OutputDir Entities
 
 Scaffold-DbContext " Server=localhost;Database=Locations;Trusted_Connection=True " Microsoft.EntityFrameworkCore.SqlServer -Force -OutputDir Entities
+
+Scaffold-DbContext "Server=localhost;Database=ReferenceData;Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer -Force -OutputDir Entities
+
+Scaffold-DbContext "Server=localhost;Database=IdentityAndSecurity;Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer -Force -OutputDir Entities

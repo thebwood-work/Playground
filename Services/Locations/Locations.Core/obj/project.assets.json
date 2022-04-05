@@ -2433,28 +2433,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\brian\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\brian.wood\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Services\\Locations\\Locations.Core\\Locations.Core.csproj",
+      "projectUniqueName": "C:\\Dev\\Github\\Playground\\Services\\Locations\\Locations.Core\\Locations.Core.csproj",
       "projectName": "Locations.Core",
-      "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\Locations\\Locations.Core\\Locations.Core.csproj",
-      "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\GitHub\\Playground\\Services\\Locations\\Locations.Core\\obj\\",
+      "projectPath": "C:\\Dev\\Github\\Playground\\Services\\Locations\\Locations.Core\\Locations.Core.csproj",
+      "packagesPath": "C:\\Users\\brian.wood\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Github\\Playground\\Services\\Locations\\Locations.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\brian.wood\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -2467,11 +2459,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Development\\GitHub\\Playground\\Common\\Playground.Core.Base\\Playground.Core.Base.csproj": {
-              "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Core.Base\\Playground.Core.Base.csproj"
+            "C:\\Dev\\Github\\Playground\\Common\\Playground.Core.Base\\Playground.Core.Base.csproj": {
+              "projectPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Core.Base\\Playground.Core.Base.csproj"
             },
-            "D:\\Development\\GitHub\\Playground\\Services\\Locations\\Locations.Infrastructure\\Locations.Infrastructure.csproj": {
-              "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\Locations\\Locations.Infrastructure\\Locations.Infrastructure.csproj"
+            "C:\\Dev\\Github\\Playground\\Services\\Locations\\Locations.Infrastructure\\Locations.Infrastructure.csproj": {
+              "projectPath": "C:\\Dev\\Github\\Playground\\Services\\Locations\\Locations.Infrastructure\\Locations.Infrastructure.csproj"
             }
           }
         }
@@ -2514,7 +2506,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
