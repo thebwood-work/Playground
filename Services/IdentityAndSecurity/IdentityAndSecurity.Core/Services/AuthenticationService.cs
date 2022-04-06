@@ -29,6 +29,17 @@ namespace IdentityAndSecurity.Core.Services
         public UserRegisterResponseModel Register(UserRegisterModel request)
         {
             var registration = new UserRegisterResponseModel();
+
+            var existingUser = _respository.GetUserByUserName(request.UserName);
+
+            if (existingUser != null)
+            {
+                registration.ErrorMessages = new List<string>();
+                registration.ErrorMessages.Add("User name already exists");
+
+                return registration;
+            }
+
             var user = new User();
 
             CreatePasswordHash(request.Password, out byte[] passwordHash, out byte[] passwordSalt);

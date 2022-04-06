@@ -7,6 +7,7 @@ using MudBlazor.Services;
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.Services.AddSingleton<PeopleService>();
 builder.Services.AddSingleton<AddressService>();
+builder.Services.AddSingleton<UserService>();
 
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
