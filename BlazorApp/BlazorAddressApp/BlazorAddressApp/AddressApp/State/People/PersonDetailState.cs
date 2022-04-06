@@ -48,7 +48,7 @@ namespace AddressApp.State.People
         public Action OnPersonSavedSuccessfully { get; set; }
         public Action OnCancelSave { get; set; }
         public Action<PersonModel> OnPersonLoaded { get; set; }
-        public Action<List<string>> OnError { get; private set; }
+        public Action<List<string>> OnError { get; set; }
 
         #endregion
     }

@@ -98,8 +98,21 @@
       ],
       "UpstreamPathTemplate": "/refdata/states",
       "UpstreamHttpMethod": [ "GET" ]
-    }
+    },
 
+    //IdentityAndSecurity API
+    {
+      "DownstreamPathTemplate": "/api/Authentication/Register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7232
+        }
+      ],
+      "UpstreamPathTemplate": "/Register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
 
   ],
   "GlobalConfiguration": {
