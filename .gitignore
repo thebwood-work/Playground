@@ -37,3 +37,5 @@
 /Services/IdentityAndSecurity/IdentityAndSecurity.Core/obj
 /Services/IdentityAndSecurity/IdentityAndSecurity.Infrastructure/bin/Debug/net6.0
 /Services/IdentityAndSecurity/IdentityAndSecurity.Infrastructure/obj
+/BlazorApp/BlazorAddressApp/BlazorAddressApp/AddressApp/bin/Debug/net6.0
+/Services/IdentityAndSecurity/IdentityAndSecurity.API/bin/Debug/net6.0

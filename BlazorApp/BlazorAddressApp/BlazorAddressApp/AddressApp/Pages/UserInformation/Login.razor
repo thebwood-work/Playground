@@ -1,0 +1,27 @@
+﻿@inherits CommonUserFunctions
+@page "/login"
+<PageTitle>Login</PageTitle>
+
+
+<EditForm EditContext="_editContext">
+    <DataAnnotationsValidator />
+        <div class="row mb-2">
+            <div class="col-12">
+                <MudTextField @bind-Value="@_user.UserName" Label="User Name"></MudTextField>
+                <ValidationMessage For="() => _user.UserName" />
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-12">
+                <MudTextField InputType="@_passwordInput" Label="Password" @bind-Value="@_user.Password" Adornment="Adornment.End" AdornmentIcon="@_passwordInputIcon" AdornmentAriaLabel="Show Password" OnAdornmentClick="ToggleShowPassword"></MudTextField>
+                <ValidationMessage For="() => _user.Password" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 oi-align-right">
+                <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Login" Color="Color.Info" OnClick="@LoginUser">Login</MudButton>
+                <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.Cancel" Color="Color.Error" OnClick="@CancelLogin">Cancel</MudButton>
+            </div>
+        </div>
+
+</EditForm>

@@ -7,8 +7,8 @@ namespace IdentityAndSecurity.Infrastructure.Entities
     {
         public Guid Id { get; set; }
         public string RoleName { get; set; }
-        public bool? IsDeleted { get; set; }
-        public DateTime? CreatedAt { get; set; }
+        public bool IsDeleted { get; set; }
+        public DateTime CreateAt { get; set; }
         public string CreatedBy { get; set; }
     }
 }

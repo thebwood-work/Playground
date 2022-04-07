@@ -76,76 +76,86 @@
       "DisplayName": "People.Infrastructure",
       "ColorIndex": 13
     },
+    "a97e28f7-39da-4a62-b769-f0360b692063": {
+      "ProjectGuid": "a97e28f7-39da-4a62-b769-f0360b692063",
+      "DisplayName": "Locations.API",
+      "ColorIndex": 14
+    },
+    "f026093a-2edd-45b9-a0b1-05392ae54050": {
+      "ProjectGuid": "f026093a-2edd-45b9-a0b1-05392ae54050",
+      "DisplayName": "OcelotApiGw",
+      "ColorIndex": 15
+    },
+    "bed2ec67-4c93-452d-a875-078c39266c21": {
+      "ProjectGuid": "bed2ec67-4c93-452d-a875-078c39266c21",
+      "DisplayName": "OcelotApiGw",
+      "ColorIndex": 0
+    },
     "96a87ad1-4108-4b40-8cea-c417833b7569": {
       "ProjectGuid": "96a87ad1-4108-4b40-8cea-c417833b7569",
       "DisplayName": "OcelotApiGw",
-      "ColorIndex": 14
-    },
-    "6e7a0d6d-74da-457b-8d36-f88d1c8de611": {
-      "ProjectGuid": "6e7a0d6d-74da-457b-8d36-f88d1c8de611",
-      "DisplayName": "ReferenceData.Core",
-      "ColorIndex": 15
-    },
-    "2f28d57e-fe7c-4e68-b9cd-836c8169de40": {
-      "ProjectGuid": "2f28d57e-fe7c-4e68-b9cd-836c8169de40",
-      "DisplayName": "ReferenceData",
-      "ColorIndex": 0
-    },
-    "fa90e80e-8b18-4d7b-9cb3-8097a26afc55": {
-      "ProjectGuid": "fa90e80e-8b18-4d7b-9cb3-8097a26afc55",
-      "DisplayName": "Locations",
       "ColorIndex": 1
+    },
+    "3a6f48bf-1e34-42d1-9cf5-725b4a49ebaf": {
+      "ProjectGuid": "3a6f48bf-1e34-42d1-9cf5-725b4a49ebaf",
+      "DisplayName": "Locations.Core",
+      "ColorIndex": 2
     },
     "ab0450bc-e264-44cb-ad6f-96de98780867": {
       "ProjectGuid": "ab0450bc-e264-44cb-ad6f-96de98780867",
       "DisplayName": "Locations.Infrastructure",
-      "ColorIndex": 2
-    },
-    "5828ecdb-ea5f-43cb-9d15-fd95cb4bdf73": {
-      "ProjectGuid": "5828ecdb-ea5f-43cb-9d15-fd95cb4bdf73",
-      "DisplayName": "IdentityAndSecurity",
       "ColorIndex": 3
     },
-    "3c9717b5-0d8a-4909-a9a3-c6c90f4686cb": {
-      "ProjectGuid": "3c9717b5-0d8a-4909-a9a3-c6c90f4686cb",
-      "DisplayName": "IdentityAndSecurity",
+    "a8ca0db7-2479-4a8a-a8e8-3b425e6edd73": {
+      "ProjectGuid": "a8ca0db7-2479-4a8a-a8e8-3b425e6edd73",
+      "DisplayName": "BlazorAddressApp",
       "ColorIndex": 4
     },
-    "ded65d5e-10f2-447c-946a-570d7d849011": {
-      "ProjectGuid": "ded65d5e-10f2-447c-946a-570d7d849011",
-      "DisplayName": "IdentityAndSecurity",
+    "07f2896b-0a1c-46b6-b342-351266cebab7": {
+      "ProjectGuid": "07f2896b-0a1c-46b6-b342-351266cebab7",
+      "DisplayName": "BlazorAddressApp",
       "ColorIndex": 5
     },
-    "887764d4-2702-445b-a450-28da6d474bf5": {
-      "ProjectGuid": "887764d4-2702-445b-a450-28da6d474bf5",
-      "DisplayName": "IdentityAndSecurity.Infrastructure",
+    "1911dff9-24eb-4d6e-910e-7d240e8c822b": {
+      "ProjectGuid": "1911dff9-24eb-4d6e-910e-7d240e8c822b",
+      "DisplayName": "AddressApp.Client",
       "ColorIndex": 6
+    },
+    "fe493cb8-4a48-4a0a-b4e4-ecbd049d3430": {
+      "ProjectGuid": "fe493cb8-4a48-4a0a-b4e4-ecbd049d3430",
+      "DisplayName": "AddressApp.Shared",
+      "ColorIndex": 7
+    },
+    "c69f9891-1867-4634-8b93-4b36f084b249": {
+      "ProjectGuid": "c69f9891-1867-4634-8b93-4b36f084b249",
+      "DisplayName": "AddressApp",
+      "ColorIndex": 8
+    },
+    "6e7a0d6d-74da-457b-8d36-f88d1c8de611": {
+      "ProjectGuid": "6e7a0d6d-74da-457b-8d36-f88d1c8de611",
+      "DisplayName": "ReferenceData.Core",
+      "ColorIndex": 9
     },
     "7f2be1f4-7ea4-4184-b86e-150c2ae0d2da": {
       "ProjectGuid": "7f2be1f4-7ea4-4184-b86e-150c2ae0d2da",
       "DisplayName": "ReferenceData.Infrastructure",
-      "ColorIndex": 7
-    },
-    "950e0168-77c4-489e-8100-f915e5b9dbb1": {
-      "ProjectGuid": "950e0168-77c4-489e-8100-f915e5b9dbb1",
-      "DisplayName": "IdentityAndSecurity.Core",
-      "ColorIndex": 8
-    },
-    "c2200f09-f7b5-47f4-9483-9da600415cee": {
-      "ProjectGuid": "c2200f09-f7b5-47f4-9483-9da600415cee",
-      "DisplayName": "IdentityAndSecurity.API",
-      "ColorIndex": 9
+      "ColorIndex": 10
     },
     "48038b02-c27b-4017-a5ef-db42f621d415": {
       "ProjectGuid": "48038b02-c27b-4017-a5ef-db42f621d415",
       "DisplayName": "ReferenceData.API",
-      "ColorIndex": 10
-    },
-    "a97e28f7-39da-4a62-b769-f0360b692063": {
-      "ProjectGuid": "a97e28f7-39da-4a62-b769-f0360b692063",
-      "DisplayName": "Locations.API",
       "ColorIndex": 11
+    },
+    "fa90e80e-8b18-4d7b-9cb3-8097a26afc55": {
+      "ProjectGuid": "fa90e80e-8b18-4d7b-9cb3-8097a26afc55",
+      "DisplayName": "Locations",
+      "ColorIndex": 12
+    },
+    "2f28d57e-fe7c-4e68-b9cd-836c8169de40": {
+      "ProjectGuid": "2f28d57e-fe7c-4e68-b9cd-836c8169de40",
+      "DisplayName": "ReferenceData",
+      "ColorIndex": 13
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 14
 }

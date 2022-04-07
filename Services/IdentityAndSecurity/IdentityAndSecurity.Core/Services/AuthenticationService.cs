@@ -49,7 +49,7 @@ namespace IdentityAndSecurity.Core.Services
             user.PasswordHash = passwordHash;
             user.PasswordSalt = passwordSalt;
             user.Email = request.Email;
-            user.CreateAt = DateTime.Now;
+            user.CreatedAt = DateTime.Now;
             user.CreatedBy = "system";
             user.IsDeleted = false;
             _respository.Register(user);

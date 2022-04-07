@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\Github\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj": {}
+    "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\Github\\Playground\\Common\\Playground.Common\\Playground.Common.csproj": {
+    "D:\\Development\\GitHub\\Playground\\Common\\Playground.Common\\Playground.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Github\\Playground\\Common\\Playground.Common\\Playground.Common.csproj",
+        "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Common\\Playground.Common.csproj",
         "projectName": "Playground.Common",
-        "projectPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Common\\Playground.Common.csproj",
-        "packagesPath": "C:\\Users\\brian.wood\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Common\\obj\\",
+        "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Common\\Playground.Common.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\brian.wood\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -54,22 +60,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
+    "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj",
+        "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj",
         "projectName": "Playground.Web.Base",
-        "projectPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj",
-        "packagesPath": "C:\\Users\\brian.wood\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\obj\\",
+        "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\brian.wood\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -82,8 +94,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Dev\\Github\\Playground\\Common\\Playground.Common\\Playground.Common.csproj": {
-                "projectPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Common\\Playground.Common.csproj"
+              "D:\\Development\\GitHub\\Playground\\Common\\Playground.Common\\Playground.Common.csproj": {
+                "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Common\\Playground.Common.csproj"
               }
             }
           }
@@ -118,22 +130,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Dev\\Github\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
+    "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Github\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
+        "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
         "projectName": "Playground.Infrastructure.Base",
-        "projectPath": "C:\\Dev\\Github\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
-        "packagesPath": "C:\\Users\\brian.wood\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Github\\Playground\\Playground.Infrastructure.Base\\obj\\",
+        "projectPath": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\brian.wood\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -178,22 +196,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Dev\\Github\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj": {
+    "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\Github\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj",
         "projectName": "People.Infrastructure",
-        "projectPath": "C:\\Dev\\Github\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\brian.wood\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\Github\\Playground\\Services\\People\\People.Infrastructure\\obj\\",
+        "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Infrastructure\\People.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\brian.wood\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -206,11 +230,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
-                "projectPath": "C:\\Dev\\Github\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj"
+              "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
+                "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj"
               },
-              "C:\\Dev\\Github\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
-                "projectPath": "C:\\Dev\\Github\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj"
+              "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
+                "projectPath": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj"
               }
             }
           }
@@ -251,7 +275,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

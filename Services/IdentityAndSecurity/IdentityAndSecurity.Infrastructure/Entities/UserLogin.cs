@@ -8,6 +8,6 @@ namespace IdentityAndSecurity.Infrastructure.Entities
         public Guid? Id { get; set; }
         public Guid? UserId { get; set; }
         public string Token { get; set; }
-        public DateTime? LoginAt { get; set; }
+        public DateTime LoginAt { get; set; }
     }
 }

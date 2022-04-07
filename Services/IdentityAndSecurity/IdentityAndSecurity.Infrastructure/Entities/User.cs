@@ -11,9 +11,9 @@ namespace IdentityAndSecurity.Infrastructure.Entities
         public string UserName { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+        public bool IsDeleted { get; set; }
         public string CreatedBy { get; set; }
-        public DateTime? CreateAt { get; set; }
+        public DateTime? CreatedAt { get; set; }
         public string Email { get; set; }
-        public bool? IsDeleted { get; set; }
     }
 }
