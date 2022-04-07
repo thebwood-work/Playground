@@ -30,9 +30,10 @@ namespace IdentityAndSecurity.Infrastructure.Entities
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
 
-                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+                entity.Property(e => e.CreateAt).HasColumnType("datetime");
 
                 entity.Property(e => e.CreatedBy)
+                    .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
@@ -48,9 +49,10 @@ namespace IdentityAndSecurity.Infrastructure.Entities
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
 
-                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+                entity.Property(e => e.CreateAt).HasColumnType("datetime");
 
                 entity.Property(e => e.CreatedBy)
+                    .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
@@ -68,7 +70,7 @@ namespace IdentityAndSecurity.Infrastructure.Entities
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
 
-                entity.Property(e => e.CreateAt).HasColumnType("datetime");
+                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
 
                 entity.Property(e => e.CreatedBy)
                     .HasMaxLength(50)
@@ -104,6 +106,8 @@ namespace IdentityAndSecurity.Infrastructure.Entities
 
             modelBuilder.Entity<UserLogin>(entity =>
             {
+                entity.ToTable("UserLogin");
+
                 entity.Property(e => e.Id)
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
@@ -111,7 +115,6 @@ namespace IdentityAndSecurity.Infrastructure.Entities
                 entity.Property(e => e.LoginAt).HasColumnType("datetime");
 
                 entity.Property(e => e.Token)
-                    .IsRequired()
                     .HasMaxLength(500)
                     .IsUnicode(false);
 
@@ -124,9 +127,10 @@ namespace IdentityAndSecurity.Infrastructure.Entities
                     .HasColumnName("ID")
                     .HasDefaultValueSql("(newid())");
 
-                entity.Property(e => e.CreatedAt).HasColumnType("datetime");
+                entity.Property(e => e.CreateAt).HasColumnType("datetime");
 
                 entity.Property(e => e.CreatedBy)
+                    .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
 

@@ -1,5 +1,6 @@
 ﻿@inherits CommonUserFunctions
 @page "/register"
+<PageTitle>Register</PageTitle>
 
 <EditForm EditContext="_editContext">
     <DataAnnotationsValidator />
@@ -28,7 +29,7 @@
         <div class="row mb-2">
             <div class="col-12">
                 <MudTextField InputType="@_passwordInput" Label="Password" @bind-Value="@_user.Password" Adornment="Adornment.End" AdornmentIcon="@_passwordInputIcon" AdornmentAriaLabel="Show Password" OnAdornmentClick="ToggleShowPassword"></MudTextField>
-                <ValidationMessage For="() => _user.ConfirmPassword" />
+                <ValidationMessage For="() => _user.Password" />
             </div>
         </div>
         <div class="row mb-2">

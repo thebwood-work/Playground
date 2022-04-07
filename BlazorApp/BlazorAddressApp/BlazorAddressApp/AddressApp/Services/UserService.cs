@@ -1,6 +1,5 @@
 ﻿using AddressApp.Models.UserInformation;
 
-
 namespace AddressApp.Services
 {
     public class UserService : BaseService
@@ -11,6 +10,11 @@ namespace AddressApp.Services
         public async Task<UserRegisterResponseModel> Register(UserRegistrationModel model)
         {
             return await this.PostAPIResult<UserRegisterResponseModel, UserRegistrationModel>(_baseURL, "register", model);
+        }
+
+        public async Task<UserLoginResponseModel> Login(UserLoginModel model)
+        {
+            return await this.PostAPIResult<UserLoginResponseModel, UserLoginModel>(_baseURL, "login", model);
         }
         #endregion
 
