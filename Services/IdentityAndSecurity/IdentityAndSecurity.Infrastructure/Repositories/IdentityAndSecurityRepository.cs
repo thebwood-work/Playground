@@ -38,6 +38,17 @@ namespace IdentityAndSecurity.Infrastructure.Repositories
             _context.SaveChanges();
 
         }
+        public List<UserRoleRoleName> GetRoleNamesByUserId(Guid? id)
+        {
+            var results = (from role in _context.Roles
+                           join userRole in _context.UserRoles on role.Id equals userRole.RoleId
+                           where (userRole.UserId == id)
+                           select new UserRoleRoleName
+                           {
+                               RoleName = role.RoleName
+                           }).ToList();
+            return results;
+        }
 
     }
 }

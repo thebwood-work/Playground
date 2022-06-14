@@ -9048,8 +9048,8 @@
     },
     "Playground.Infrastructure.Base/1.0.0": {
       "type": "project",
-      "path": "../../../Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj",
-      "msbuildProject": "../../../Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj"
+      "path": "../../../Common/Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj",
+      "msbuildProject": "../../../Common/Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj"
     },
     "Playground.Web.Base/1.0.0": {
       "type": "project",
@@ -9095,7 +9095,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/bwood/Playground/_packaging/PlaygroundNuget/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {

@@ -28,7 +28,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bwood/Playground/_packaging/PlaygroundNuget/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -70,14 +71,14 @@
         }
       }
     },
-    "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
+    "D:\\Development\\GitHub\\Playground\\Common\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
+        "projectUniqueName": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
         "projectName": "Playground.Infrastructure.Base",
-        "projectPath": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
+        "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj",
         "packagesPath": "C:\\Users\\brian\\.nuget\\packages\\",
-        "outputPath": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\obj\\",
+        "outputPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Infrastructure.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -94,7 +95,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bwood/Playground/_packaging/PlaygroundNuget/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -160,7 +162,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bwood/Playground/_packaging/PlaygroundNuget/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -241,14 +244,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/bwood/Playground/_packaging/PlaygroundNuget/nuget/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
-                "projectPath": "D:\\Development\\GitHub\\Playground\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj"
+              "D:\\Development\\GitHub\\Playground\\Common\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj": {
+                "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Infrastructure.Base\\Playground.Infrastructure.Base.csproj"
               }
             }
           }

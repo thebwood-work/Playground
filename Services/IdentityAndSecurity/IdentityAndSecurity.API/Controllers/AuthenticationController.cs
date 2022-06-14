@@ -48,16 +48,16 @@ namespace IdentityAndSecurity.API.Controllers
         [AllowAnonymous]
         [HttpPost("login")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
-        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        [ProducesResponseType((int)HttpStatusCode.NotFound)]
         [ProducesResponseType((int)HttpStatusCode.InternalServerError)]
-        public ActionResult<UserLoginCredentialsResponseModel> Login(UserLoginCredentialsModel request)
+        public ActionResult<UserLoginCredentialsResponseModel> Login([FromBody]UserLoginCredentialsModel request)
         {
             try
             {
                 var response = _service.Login(request);
                 if (response != null && response.ErrorMessages != null && response.ErrorMessages.Count > 0)
                 {
-                    return BadRequest(response);
+                    return NotFound(response);
                 }
                 return Ok(response);
             }

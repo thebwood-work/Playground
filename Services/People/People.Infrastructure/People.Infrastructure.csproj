@@ -12,8 +12,8 @@
 		</PackageReference>
 	</ItemGroup>
 	<ItemGroup>
+	  <ProjectReference Include="..\..\..\Common\Playground.Infrastructure.Base\Playground.Infrastructure.Base.csproj" />
 	  <ProjectReference Include="..\..\..\Common\Playground.Web.Base\Playground.Web.Base.csproj" />
-	  <ProjectReference Include="..\..\..\Playground.Infrastructure.Base\Playground.Infrastructure.Base.csproj" />
 	</ItemGroup>
 
 </Project>

@@ -14,7 +14,13 @@
 
 	<ItemGroup>
     <ProjectReference Include="..\..\..\Common\Playground.Web.Base\Playground.Web.Base.csproj" />
+    <ProjectReference Include="..\..\IdentityAndSecurity\IdentityAndSecurity.Core\IdentityAndSecurity.Core.csproj" />
+    <ProjectReference Include="..\..\IdentityAndSecurity\IdentityAndSecurity.Infrastructure\IdentityAndSecurity.Infrastructure.csproj" />
     <ProjectReference Include="..\People.Core\People.Core.csproj" />
   </ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Filter\" />
+	</ItemGroup>
 
 </Project>

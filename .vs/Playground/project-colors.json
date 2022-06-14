@@ -155,7 +155,77 @@
       "ProjectGuid": "2f28d57e-fe7c-4e68-b9cd-836c8169de40",
       "DisplayName": "ReferenceData",
       "ColorIndex": 13
+    },
+    "887764d4-2702-445b-a450-28da6d474bf5": {
+      "ProjectGuid": "887764d4-2702-445b-a450-28da6d474bf5",
+      "DisplayName": "IdentityAndSecurity.Infrastructure",
+      "ColorIndex": 14
+    },
+    "950e0168-77c4-489e-8100-f915e5b9dbb1": {
+      "ProjectGuid": "950e0168-77c4-489e-8100-f915e5b9dbb1",
+      "DisplayName": "IdentityAndSecurity.Core",
+      "ColorIndex": 15
+    },
+    "c2200f09-f7b5-47f4-9483-9da600415cee": {
+      "ProjectGuid": "c2200f09-f7b5-47f4-9483-9da600415cee",
+      "DisplayName": "IdentityAndSecurity.API",
+      "ColorIndex": 0
+    },
+    "ded65d5e-10f2-447c-946a-570d7d849011": {
+      "ProjectGuid": "ded65d5e-10f2-447c-946a-570d7d849011",
+      "DisplayName": "IdentityAndSecurity",
+      "ColorIndex": 1
+    },
+    "18187126-9937-4744-b97c-c3604f935812": {
+      "ProjectGuid": "18187126-9937-4744-b97c-c3604f935812",
+      "DisplayName": "Playground.Infrastructure.Base",
+      "ColorIndex": 2
+    },
+    "ccca8acf-3e81-4058-8d0f-f318d3022864": {
+      "ProjectGuid": "ccca8acf-3e81-4058-8d0f-f318d3022864",
+      "DisplayName": "Playground.Core.Base",
+      "ColorIndex": 3
+    },
+    "74c51c0b-e54e-429a-92bc-c260b37918a8": {
+      "ProjectGuid": "74c51c0b-e54e-429a-92bc-c260b37918a8",
+      "DisplayName": "IdentityServer.API",
+      "ColorIndex": 4
+    },
+    "04cb9442-ef31-4f02-80d7-4fac54bc7e23": {
+      "ProjectGuid": "04cb9442-ef31-4f02-80d7-4fac54bc7e23",
+      "DisplayName": "IdentityServer.Infrastructure",
+      "ColorIndex": 5
+    },
+    "f87e8650-4f9f-416f-921e-6b62276d0223": {
+      "ProjectGuid": "f87e8650-4f9f-416f-921e-6b62276d0223",
+      "DisplayName": "IdentityServer.API",
+      "ColorIndex": 6
+    },
+    "60cef4d6-5191-4642-baa8-abef43ec8868": {
+      "ProjectGuid": "60cef4d6-5191-4642-baa8-abef43ec8868",
+      "DisplayName": "IdentityServer.Infrastructure",
+      "ColorIndex": 7
+    },
+    "fa865643-f558-4d35-96a0-c422cafeee8c": {
+      "ProjectGuid": "fa865643-f558-4d35-96a0-c422cafeee8c",
+      "DisplayName": "IdentityServer.Server",
+      "ColorIndex": 8
+    },
+    "8595d019-358a-4120-8172-168e6c564448": {
+      "ProjectGuid": "8595d019-358a-4120-8172-168e6c564448",
+      "DisplayName": "IdentityServer.API",
+      "ColorIndex": 9
+    },
+    "bbdfa27d-0d2e-4757-b1f1-44b1333049eb": {
+      "ProjectGuid": "bbdfa27d-0d2e-4757-b1f1-44b1333049eb",
+      "DisplayName": "IdentityServer.Server",
+      "ColorIndex": 10
+    },
+    "27c691c5-c2f3-4777-aa13-a0b036e664dc": {
+      "ProjectGuid": "27c691c5-c2f3-4777-aa13-a0b036e664dc",
+      "DisplayName": "Common",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 14
+  "NextColorIndex": 12
 }

@@ -1,8 +1,7 @@
 import { Container } from "@mui/material";
-import { FC } from "react";
 
 
- function Body({children}: {children:any}) {
+ function Body({children}: {children:HTMLElement}) {
     return (
         <Container>
             {children}

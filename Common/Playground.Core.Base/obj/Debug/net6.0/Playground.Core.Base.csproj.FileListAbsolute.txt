@@ -1,0 +1,11 @@
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\bin\Debug\net6.0\Playground.Core.Base.deps.json
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\bin\Debug\net6.0\Playground.Core.Base.dll
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\bin\Debug\net6.0\ref\Playground.Core.Base.dll
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\bin\Debug\net6.0\Playground.Core.Base.pdb
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\Playground.Core.Base.GeneratedMSBuildEditorConfig.editorconfig
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\Playground.Core.Base.AssemblyInfoInputs.cache
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\Playground.Core.Base.AssemblyInfo.cs
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\Playground.Core.Base.csproj.CoreCompileInputs.cache
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\Playground.Core.Base.dll
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\ref\Playground.Core.Base.dll
+D:\Development\GitHub\Playground\Common\Playground.Core.Base\obj\Debug\net6.0\Playground.Core.Base.pdb

@@ -2999,6 +2999,35 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "IdentityAndSecurity.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "11.0.1",
+          "IdentityAndSecurity.Infrastructure": "1.0.0",
+          "Playground.Core.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IdentityAndSecurity.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IdentityAndSecurity.Core.dll": {}
+        }
+      },
+      "IdentityAndSecurity.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.1",
+          "Playground.Infrastructure.Base": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IdentityAndSecurity.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IdentityAndSecurity.Infrastructure.dll": {}
+        }
+      },
       "People.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -9271,6 +9300,16 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "IdentityAndSecurity.Core/1.0.0": {
+      "type": "project",
+      "path": "../../IdentityAndSecurity/IdentityAndSecurity.Core/IdentityAndSecurity.Core.csproj",
+      "msbuildProject": "../../IdentityAndSecurity/IdentityAndSecurity.Core/IdentityAndSecurity.Core.csproj"
+    },
+    "IdentityAndSecurity.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../IdentityAndSecurity/IdentityAndSecurity.Infrastructure/IdentityAndSecurity.Infrastructure.csproj",
+      "msbuildProject": "../../IdentityAndSecurity/IdentityAndSecurity.Infrastructure/IdentityAndSecurity.Infrastructure.csproj"
+    },
     "People.Core/1.0.0": {
       "type": "project",
       "path": "../People.Core/People.Core.csproj",
@@ -9293,8 +9332,8 @@
     },
     "Playground.Infrastructure.Base/1.0.0": {
       "type": "project",
-      "path": "../../../Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj",
-      "msbuildProject": "../../../Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj"
+      "path": "../../../Common/Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj",
+      "msbuildProject": "../../../Common/Playground.Infrastructure.Base/Playground.Infrastructure.Base.csproj"
     },
     "Playground.Web.Base/1.0.0": {
       "type": "project",
@@ -9305,6 +9344,8 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "IdentityAndSecurity.Core >= 1.0.0",
+      "IdentityAndSecurity.Infrastructure >= 1.0.0",
       "MassTransit >= 8.0.0",
       "MassTransit.RabbitMQ >= 8.0.0",
       "People.Core >= 1.0.0",
@@ -9341,7 +9382,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/bwood/Playground/_packaging/PlaygroundNuget/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -9349,6 +9391,12 @@
           "projectReferences": {
             "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj": {
               "projectPath": "D:\\Development\\GitHub\\Playground\\Common\\Playground.Web.Base\\Playground.Web.Base.csproj"
+            },
+            "D:\\Development\\GitHub\\Playground\\Services\\IdentityAndSecurity\\IdentityAndSecurity.Core\\IdentityAndSecurity.Core.csproj": {
+              "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\IdentityAndSecurity\\IdentityAndSecurity.Core\\IdentityAndSecurity.Core.csproj"
+            },
+            "D:\\Development\\GitHub\\Playground\\Services\\IdentityAndSecurity\\IdentityAndSecurity.Infrastructure\\IdentityAndSecurity.Infrastructure.csproj": {
+              "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\IdentityAndSecurity\\IdentityAndSecurity.Infrastructure\\IdentityAndSecurity.Infrastructure.csproj"
             },
             "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Core\\People.Core.csproj": {
               "projectPath": "D:\\Development\\GitHub\\Playground\\Services\\People\\People.Core\\People.Core.csproj"

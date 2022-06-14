@@ -74,20 +74,11 @@ namespace IdentityAndSecurity.Core.Services
                 response.ErrorMessages.Add("Password is incorrect");
                 return response;
             }
+            var roles = _respository.GetRoleNamesByUserId(user.Id);
 
-            var token = CreateToken(user);
-            var userLogin = _respository.GetUserLoginByUserId(user.Id);
-            if(userLogin == null)
-            {
-                userLogin = new UserLogin();
-                userLogin.UserId = user.Id;
-            }
-            userLogin.Token = token;
-            userLogin.LoginAt = DateTime.Now;
+            var token = CreateToken(user, roles);
 
-            _respository.SaveUserLogin(userLogin);
-
-            response.UserID = user.Id;
+            response.Token = token;
             return response;
         }
 
@@ -108,20 +99,26 @@ namespace IdentityAndSecurity.Core.Services
                 return computedHash.SequenceEqual(passwordHash);
             }
         }
-        private string CreateToken(User user)
+        private string CreateToken(User user, List<UserRoleRoleName> roles)
         {
             List<Claim> claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.UserName)
             };
+            foreach(var role in roles)
+            {
+                claims.Add(new Claim(ClaimTypes.Role, role.RoleName));
+            }
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
-                _configuration.GetSection("AppSettings:Token").Value));
+                _configuration["Jwt:Key"]));
 
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
             var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"], 
+                audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddDays(1),
+                expires: DateTime.Now.AddMinutes(15),
                 signingCredentials: creds);
 
             var jwt = new JwtSecurityTokenHandler().WriteToken(token);

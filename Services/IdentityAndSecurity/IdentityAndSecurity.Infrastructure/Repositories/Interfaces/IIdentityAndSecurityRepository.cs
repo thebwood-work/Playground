@@ -8,6 +8,6 @@ namespace IdentityAndSecurity.Infrastructure.Repositories.Interfaces
         User GetUserByUserName(string userName);
         UserLogin GetUserLoginByUserId(Guid? userId);
         void SaveUserLogin(UserLogin userLogin);
-
+        List<UserRoleRoleName> GetRoleNamesByUserId(Guid? id);
     }
 }
