@@ -225,7 +225,12 @@
       "ProjectGuid": "27c691c5-c2f3-4777-aa13-a0b036e664dc",
       "DisplayName": "Common",
       "ColorIndex": 11
+    },
+    "86530147-9ad0-4c01-9376-b4c65768b2e1": {
+      "ProjectGuid": "86530147-9ad0-4c01-9376-b4c65768b2e1",
+      "DisplayName": "Playground.Infrastructure.Base",
+      "ColorIndex": 12
     }
   },
-  "NextColorIndex": 12
+  "NextColorIndex": 13
 }

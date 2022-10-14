@@ -7,6 +7,7 @@ import { AddressModule } from './features/address/address.module';
 import { PeopleModule } from './features/people/people.module';
 import { HomeComponent } from './features/home/home.component';
 import { NotFoundComponent } from './features/not-found/not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NotFoundComponent } from './features/not-found/not-found.component';
     BrowserModule,
     PeopleModule,
     AddressModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

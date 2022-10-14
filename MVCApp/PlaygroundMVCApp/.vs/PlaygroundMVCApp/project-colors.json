@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "8b12cae9-257c-478b-8af1-bf50636c0f03": {
+      "ProjectGuid": "8b12cae9-257c-478b-8af1-bf50636c0f03",
+      "DisplayName": "Playground.MVC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
